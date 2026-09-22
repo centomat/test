@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Shutdown – Spielregeln</title>
+<meta name="description" content="Die vollständigen Regeln für das physische Kartenspiel Lucky Shutdown – Ziel, Aufbau, Spielzug und Sonderfälle.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="regeln">
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="index.html">Lucky Shutdown</a>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" data-i18n-aria-label="lang.ariaLabel" aria-label="Sprache wählen">
+        <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true"><span class="lang-flag">🇩🇪</span><span class="lang-code">DE</span></button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false"><span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span></button>
+      </div>
+      <a class="nav-buy is-soon" href="index.html#kaufen" data-i18n="nav.buy">Bald erhältlich</a>
+      <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="navMenu" data-i18n-aria-label="nav.menuLabel" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div id="navMenu" class="nav-menu" hidden>
+    <ul>
+      <li><a href="regeln.html" aria-current="page" data-i18n="nav.rules">Spielregeln</a></li>
+      <li><a href="karten.html" data-i18n="nav.cards">Alle Karten</a></li>
+      <li><a href="index.html#online" data-i18n="nav.online">Online spielen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap-narrow">
+    <h1 data-i18n="rgl.pageTitle">Spielregeln</h1>
+    <p data-i18n="rgl.pageLede">Alles, was du für eine Partie mit dem physischen Kartenspiel brauchst – vom Aufbau bis zur letzten Karte.</p>
+
+    <div class="quickref">
+      <h2 data-i18n="rgl.quick.title">Schnell erklärt</h2>
+      <ol>
+        <li data-i18n="rgl.quick.1"><strong>Ziel:</strong> Wirf als Erster alle deine Karten ab. Wer als Letzter noch Karten hat, verliert die Runde.</li>
+        <li data-i18n="rgl.quick.2"><strong>Aufbau:</strong> Jeder hat 3&nbsp;verdeckte, 3&nbsp;offene und 3&nbsp;Handkarten. Der Rest ist der Nachziehstapel.</li>
+        <li data-i18n="rgl.quick.3"><strong>Dein Zug:</strong> Lege eine Karte (oder mehrere gleiche) auf den Ablagestapel – <strong>gleich hoch oder höher</strong> als die oberste Karte, oder eine <strong>Magic-Karte</strong>.</li>
+        <li data-i18n="rgl.quick.4"><strong>Danach:</strong> Fülle deine Hand wieder auf 3&nbsp;Karten auf. Der Nächste ist im Uhrzeigersinn dran.</li>
+        <li data-i18n="rgl.quick.5"><strong>Nichts legbar?</strong> Nimm den kompletten Ablagestapel auf die Hand.</li>
+        <li data-i18n="rgl.quick.6"><strong>Sieg:</strong> Erst die Hand leeren, dann die offenen, dann die verdeckten Karten. Wer zuerst alles los ist, hat gewonnen.</li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<nav class="jumpbar" data-i18n-aria-label="rgl.ariaLabel.sections" aria-label="Regel-Abschnitte">
+  <ul>
+    <li><a href="#ziel" data-i18n="rgl.jump.a">Ziel</a></li>
+    <li><a href="#aufbau" data-i18n="rgl.jump.b">Aufbau</a></li>
+    <li><a href="#spielzug" data-i18n="rgl.jump.c">Spielzug</a></li>
+    <li><a href="#sonderfaelle" data-i18n="rgl.jump.e">Sonderfälle</a></li>
+    <li><a href="#ende" data-i18n="rgl.jump.f">Spielende</a></li>
+  </ul>
+</nav>
+
+<main class="wrap-mid">
+
+  <!-- A -->
+  <section class="rule-block" id="ziel">
+    <h2 data-i18n="rgl.a.title">Das Ziel des Spiels</h2>
+    <p class="rule-lede" data-i18n="rgl.a.lede">Lucky Shutdown ist ein Ablegespiel für <strong>2&nbsp;bis&nbsp;5&nbsp;Spieler</strong>. Wer als Erster keine Karten mehr hat, gehört zu den Gewinnern.</p>
+    <p data-i18n="rgl.a.p1">
+      Reihum legt ihr Karten auf einen gemeinsamen <span class="term">Ablagestapel</span>. Jede Karte muss dabei
+      <strong>mindestens gleich hoch</strong> sein wie die zuletzt gelegte – oder eine <span class="term">Magic-Karte</span>,
+      die die Regeln kurzzeitig verändert. Wer nicht legen kann, muss den ganzen Ablagestapel aufnehmen und trägt
+      die Karten weiter mit sich.
+    </p>
+    <p data-i18n="rgl.a.p2">
+      Jeder Spieler wird seine Karten in drei Wellen los: zuerst die <strong>Handkarten</strong>, dann die
+      <strong>drei offenen Tischkarten</strong>, zuletzt die <strong>drei verdeckten Tischkarten</strong>.
+      Sobald jemand alles abgelegt hat, ist er fertig. Die anderen spielen weiter.
+      <strong>Der letzte Spieler mit Karten verliert die Runde</strong> und baut die nächste Runde auf.
+      Ein Unentschieden gibt es nicht.
+    </p>
+  </section>
+
+  <!-- B -->
+  <section class="rule-block" id="aufbau">
+    <h2 data-i18n="rgl.b.title">Spielaufbau</h2>
+    <ol class="steps">
+      <li data-i18n="rgl.b.step1"><strong>Mischen.</strong> Mische alle 48 Karten gründlich.</li>
+      <li data-i18n="rgl.b.step2"><strong>Verdeckte Tischkarten austeilen.</strong> Gib jedem Spieler <strong>3 Karten verdeckt</strong>. Sie werden vor dem Spieler abgelegt und <strong>nicht angesehen</strong>.</li>
+      <li data-i18n="rgl.b.step3"><strong>Die restlichen Handkarten austeilen.</strong> Gib jedem Spieler danach <strong>6 weitere Karten</strong>. Diese darf jeder ansehen.</li>
+      <li data-i18n="rgl.b.step4"><strong>Offene Tischkarten wählen.</strong> Jeder Spieler wählt aus diesen 6 Karten <strong>3 aus</strong> und legt sie <strong>offen auf die 3 verdeckten Karten</strong>. Die übrigen 3 Karten bleiben als <strong>Starthand</strong> auf der Hand.</li>
+      <li data-i18n="rgl.b.step5"><strong>Nachziehstapel bilden.</strong> Alle nicht ausgeteilten Karten bilden verdeckt den <span class="term">Nachziehstapel</span>. Daneben ist Platz für den <span class="term">Ablagestapel</span> – der startet leer.</li>
+      <li data-i18n="rgl.b.step6"><strong>Startspieler bestimmen.</strong> In der ersten Runde beginnt, wer die <strong>niedrigste normale Zahlenkarte</strong> auf der Hand hat (Magic-Karten zählen nicht; bei Gleichstand entscheidet ihr, wer startet). Ab der zweiten Runde beginnt immer der Spieler <strong>rechts neben dem Verlierer</strong> der Vorrunde.</li>
+    </ol>
+    <div class="result-chip" data-i18n="rgl.b.resultChip">Pro Spieler am Start: 3&nbsp;verdeckt · 3&nbsp;offen · 3&nbsp;auf der Hand</div>
+  </section>
+
+  <!-- C -->
+  <section class="rule-block" id="spielzug">
+    <h2 data-i18n="rgl.c.title">Der Spielzug</h2>
+    <p class="rule-lede" data-i18n="rgl.c.lede">Gespielt wird reihum im <strong>Uhrzeigersinn</strong>. Bist du dran, machst du <strong>genau eine</strong> der folgenden Sachen.</p>
+    <ol class="steps">
+      <li data-i18n="rgl.c.step1"><strong>Schau, was oben liegt.</strong> Die oberste Karte des Ablagestapels bestimmt, was du legen darfst. Ist der Stapel leer, darfst du eine beliebige Karte legen.</li>
+      <li data-i18n="rgl.c.step2"><strong>Lege eine Karte oder mehrere gleiche Karten ab.</strong> Die Farbe spielt keine Rolle – entscheidend ist nur der gleiche Wert bei Zahlenkarten oder der gleiche Effekt bei Magic-Karten. Die drei Unterbieten-Karten gelten dabei ebenfalls als „gleich" und können zusammen gespielt werden.</li>
+      <li data-i18n="rgl.c.step3"><strong>Oder nimm den Ablagestapel auf.</strong> Kannst (oder willst) du nichts legen, nimmst du <strong>alle</strong> Karten des Ablagestapels auf deine Hand. Danach eröffnet der nächste Spieler einen neuen Ablagestapel. Einen <strong>leeren</strong> Stapel kann man nicht aufnehmen – dann musst du legen.</li>
+      <li data-i18n="rgl.c.step4"><strong>Fülle deine Hand auf.</strong> Hast du nach deinem Zug weniger als 3&nbsp;Karten auf der Hand, ziehst du vom Nachziehstapel nach, bis du wieder 3&nbsp;Karten hast – solange noch Karten auf dem Nachziehstapel liegen.</li>
+      <li data-i18n="rgl.c.step5"><strong>Der Nächste ist dran</strong> – im Uhrzeigersinn.</li>
+    </ol>
+
+    <div class="play-matrix">
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k1">Oben liegt … nichts</span><span class="v" data-i18n="rgl.c.matrix.anyCard">Lege eine <strong>beliebige</strong> Karte.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k2">… eine Zahl (z.&nbsp;B. 16)</span><span class="v" data-i18n="rgl.c.matrix.v2">Lege eine Zahl <strong>16 oder höher</strong> – oder eine Magic-Karte.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k3">… eine 15 (Farbzwang)</span><span class="v" data-i18n="rgl.c.matrix.v3">Lege eine Karte der <strong>gezeigten Farbe</strong> (Wert egal, auch niedriger) – oder eine Magic-Karte dieser Farbe.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k4">… eine 17 (Magic-Sperre)</span><span class="v" data-i18n="rgl.c.matrix.v4">Nur eine Zahl <strong>17 oder höher</strong>. <strong>Keine</strong> Magic-Karte.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k5">… eine 19 (Aussetzen)</span><span class="v" data-i18n="rgl.c.matrix.v5">Du bist <strong>übersprungen</strong> – außer du legst selbst eine 19.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k6">… ein „Frei Spiel"</span><span class="v" data-i18n="rgl.c.matrix.anyCard">Lege eine <strong>beliebige</strong> Karte.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k7">… ein „Unterbieten" (z.&nbsp;B. 16)</span><span class="v" data-i18n="rgl.c.matrix.v7">Lege eine Zahl <strong>kleiner als 16</strong> – oder eine Magic-Karte.</span></div>
+    </div>
+  </section>
+
+  <!-- E -->
+  <section class="rule-block" id="sonderfaelle">
+    <h2 data-i18n="rgl.e.title">Sonderfälle &amp; wichtige Regeln</h2>
+    <p class="rule-lede" data-i18n="rgl.e.lede">Situationen, die während einer Partie vorkommen, aber nicht in den normalen Ablauf gehören. Aufklappen, wenn du sie brauchst.</p>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d1.summary">Vierling &amp; Drilling – der Stapel verschwindet</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d1.p1">Liegen ganz oben auf dem Ablagestapel <strong>vier identische Zahlenkarten</strong> direkt übereinander (ein <span class="term">Vierling</span>), wird der komplette Ablagestapel entfernt.</p>
+        <p data-i18n="rgl.e.d1.p2">Dasselbe gilt für einen <span class="term">Drilling</span> aus Magic-Karten: <strong>3× Stapel löschen</strong>, <strong>3× Schieben</strong>, <strong>3× Frei Spiel</strong> oder die drei verschiedenen <strong>Unterbieten</strong>-Karten (16 + 17 + 18).</p>
+        <p class="mini-subhead" data-i18n="rgl.e.d1.subhead">Danach</p>
+        <p data-i18n="rgl.e.d1.p3">Der Spieler, der die vollendende Karte gelegt hat, füllt seine Hand auf 3&nbsp;Karten auf und <strong>beginnt sofort einen neuen Zug</strong> mit einer beliebigen Karte.</p>
+        <p data-i18n="rgl.e.d1.p4">Ein Vierling/Drilling kann in <strong>einem Zug</strong> entstehen (du legst alle Karten selbst) oder über mehrere Züge – auch als Schnellreaktion (siehe unten).</p>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d2.summary">Schnellreaktion – Schnapp dir den Vierling oder Drilling!</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d2.p1">Liegen bereits <strong>drei gleiche Karten</strong> auf dem Stapel und dir fehlt nur die vierte zum Vierling, darf <strong>jeder Spieler</strong> die passende Karte sofort dazulegen – <strong>auch wenn er nicht an der Reihe ist</strong>. Das Gleiche gilt, wenn eine Karte liegt und ein Spieler die drei passenden Karten besitzt, oder wenn zwei Karten liegen und ein Spieler die beiden fehlenden Karten hat.</p>
+        <p data-i18n="rgl.e.d2.p2">Der Vierling bei Zahlenkarten bzw. Drilling bei Magic-Karten ist damit vollständig, der gesamte Stapel wird entfernt und du erhältst sofort den nächsten Zug. Fülle vorher deine Hand wieder auf 3&nbsp;Karten auf.</p>
+        <p data-i18n="rgl.e.d2.p3">Sei schnell und aufmerksam: Sobald der regulär nächste Spieler eine andere Karte gelegt hat, ist die Chance vorbei.</p>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d3.summary">Farbzwang</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d3.p1">Solange eine <strong>15</strong> oben liegt, zählt nur die Farbe – nicht der Wert. Du darfst also auch <strong>niedrigere</strong> Karten legen, solange die Farbe passt.</p>
+        <ul>
+          <li data-i18n="rgl.e.d3.li1"><strong>Zweifarbige Karten</strong> erfüllen jede Pflichtfarbe.</li>
+          <li data-i18n="rgl.e.d3.li2">Legst du mehrere gleiche Karten, muss nur <strong>eine davon</strong> die geforderte Farbe haben. Die übrigen dürfen eine andere Farbe haben, solange sie denselben Wert haben. Beispiel: Auf eine orange 15 darfst du eine orange 19 und zwei blaue 19 zusammen legen. Eine einzelne falschfarbige Karte bleibt verboten.</li>
+          <li data-i18n="rgl.e.d3.li3">Der Farbzwang gilt <strong>ausnahmslos</strong> – auch für <strong>jede Magic-Karte</strong>.</li>
+          <li data-i18n="rgl.e.d3.li4">Liegen mehrere 15er, gilt die Farbe der <strong>obersten</strong> (zuletzt gelegten).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d4.summary">Aussetzen – die Kette</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d4.p1">Eine <strong>19</strong> lässt den nächsten Spieler aussetzen. Legst du zwei 19er, setzen zwei Spieler aus – und so weiter.</p>
+        <p data-i18n="rgl.e.d4.p2">Müsstest <strong>du selbst</strong> aussetzen, hast aber eine 19 in der Hand oder offen liegen, darfst du sie in deinem „Aussetz-Moment" trotzdem spielen. Dadurch:</p>
+        <ul>
+          <li data-i18n="rgl.e.d4.li1">gibst du das Aussetzen an den nächsten Spieler weiter,</li>
+          <li data-i18n="rgl.e.d4.li2">und <strong>ein zusätzlicher</strong> Spieler nach dir setzt aus.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d5.summary">Von der Hand zu den Tischkarten</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d5.p1">Du spielst deine Karten in dieser Reihenfolge:</p>
+        <ol>
+          <li data-i18n="rgl.e.d5.o1"><strong>Handkarten.</strong> Solange du Handkarten hast, spielst du nur von der Hand.</li>
+          <li data-i18n="rgl.e.d5.o2"><strong>Offene Tischkarten.</strong> Erst wenn Hand <em>und</em> Nachziehstapel leer sind, spielst du deine 3 offenen Tischkarten.</li>
+          <li><span data-i18n="rgl.e.d5.o3"><strong>Verdeckte Tischkarten.</strong> Sind auch die offenen weg, deckst du pro Zug <strong>eine verdeckte Karte blind auf</strong> und musst sie sofort spielen.</span>
+            <ul>
+              <li data-i18n="rgl.e.d5.o3sub1">Passt sie → sie ist gespielt, der Zug läuft normal weiter.</li>
+              <li data-i18n="rgl.e.d5.o3sub2">Passt sie nicht → sie kommt auf deine Hand und du <strong>nimmst den Ablagestapel auf</strong>. Dann musst du erst deine Hand wieder leeren, bevor du zu den Tischkarten zurückkehrst.</li>
+            </ul>
+          </li>
+        </ol>
+        <p data-i18n="rgl.e.d5.combo"><strong>Kombi-Zug:</strong> Deine letzte(n) Handkarte(n) dürfen zusammen mit gleichwertigen offenen Tischkarten in <strong>einem</strong> Zug gespielt werden. Das ist nur erlaubt, wenn du dadurch alle Karten aus deiner Hand ablegst.</p>
+        <p data-i18n="rgl.e.d5.example">Beispiel: Du hast eine 19 als letzte Handkarte und zusätzlich eine offene 19 auf dem Tisch, und der Nachziehstapel ist leer – dann darfst du beide 19er gemeinsam in einem Zug spielen.</p>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d6.summary">Wenn du nicht legen kannst</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d6.p1">Kannst du keine passende Karte legen, <strong>nimmst du den kompletten Ablagestapel</strong> auf deine Hand. Danach eröffnet der nächste Spieler einen neuen Ablagestapel.</p>
+        <ul>
+          <li data-i18n="rgl.e.d6.li1">Freiwilliges Aufnehmen ist erlaubt, auch wenn du legen könntest.</li>
+          <li data-i18n="rgl.e.d6.li2">Einen <strong>leeren</strong> Ablagestapel kannst du nicht „aufnehmen", du musst in dem Fall also legen.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="disclosure">
+      <summary data-i18n="rgl.e.d7.summary">Optionale Regeln</summary>
+      <div class="disclosure-body">
+        <p data-i18n="rgl.e.d7.p1">Diese beiden Regeln sind <strong>optional</strong>. Legt vor dem Spiel gemeinsam fest, ob ihr sie verwendet.</p>
+        <p class="mini-subhead" data-i18n="rgl.e.d7.sub1">Glück herausfordern</p>
+        <p data-i18n="rgl.e.d7.p2">Einmal pro Spiel darfst du, wenn du nicht legen kannst, es ansagen, die <strong>oberste Karte des Nachziehstapels ziehen und sofort blind spielen</strong>, ohne sie vorher anzusehen. Passt sie → weiter im Spiel. Passt sie nicht → sie kommt auf deine Hand und du nimmst den Ablagestapel auf.</p>
+        <p class="mini-subhead" data-i18n="rgl.e.d7.sub2">Vorzeitiges Aufdecken</p>
+        <p data-i18n="rgl.e.d7.p3">Bist du in der offenen Tischkartenphase, hast schon 1–2 verdeckte Karten freigespielt, es liegen noch offene Karten vor dir und du kannst keine davon spielen: Dann darfst du <strong>einmal pro Spiel</strong> eine der bereits freigelegten verdeckten Karten früher aufdecken und spielen. Passt sie → weiter. Passt sie nicht → auf die Hand und Ablagestapel aufnehmen.</p>
+      </div>
+    </details>
+
+  </section>
+
+  <!-- F -->
+  <section class="rule-block" id="ende">
+    <h2 data-i18n="rgl.f.title">Spielende &amp; Gewinner</h2>
+    <p class="rule-lede" data-i18n="rgl.f.lede">Eine Runde endet, sobald nur noch ein Spieler Karten hat.</p>
+    <ol class="steps">
+      <li data-i18n="rgl.f.step1"><strong>Fertig werden.</strong> Wer seine allerletzte Karte abgelegt hat – aus Hand, offenen und verdeckten Tischkarten – ist fertig und scheidet aus der laufenden Runde aus.</li>
+      <li data-i18n="rgl.f.step2"><strong>Der Verlierer.</strong> Sobald nur noch <strong>ein</strong> Spieler Karten hat, verliert dieser die Runde.</li>
+      <li data-i18n="rgl.f.step3"><strong>Nächste Runde.</strong> Der Verlierer mischt und teilt die nächste Runde aus. Es beginnt der Spieler <strong>rechts neben ihm</strong>.</li>
+    </ol>
+    <p style="margin-top:20px" data-i18n="rgl.f.final">Ein Unentschieden gibt es nicht.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Lucky Shutdown</h4>
+        <ul>
+          <li><a href="regeln.html" data-i18n="nav.rules">Spielregeln</a></li>
+          <li><a href="karten.html" data-i18n="nav.cards">Alle Karten</a></li>
+          <li><a href="index.html#online" data-i18n="nav.online">Online spielen</a></li>
+          <li><a href="index.html#kaufen" data-i18n="footer.buyLink">Kaufen</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4 data-i18n="footer.newsletterTitle">Newsletter</h4>
+        <p data-i18n="footer.newsletterText">Erfahre, wann das physische Spiel und die Online-Version verfügbar sind.</p>
+        <form class="row" onsubmit="return false">
+          <input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="Deine E-Mail" data-i18n-aria-label="footer.emailAriaLabel" aria-label="E-Mail-Adresse">
+          <button type="submit" data-i18n="footer.signupButton">Anmelden</button>
+        </form>
+        <span class="placeholder-note" style="margin-top:10px" data-i18n="footer.placeholderNote">Platzhalter – noch nicht aktiv</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Lucky Shutdown</span>
+      <a href="#" data-i18n="footer.imprint">Impressum (Platzhalter)</a>
+      <a href="#" data-i18n="footer.privacy">Datenschutz (Platzhalter)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Shutdown – Kartenspiel</title>
+<meta name="description" content="Lucky Shutdown ist ein schnelles Ablege-Kartenspiel: clever ablegen, Farben erzwingen, Magic-Karten im richtigen Moment ausspielen. Regeln, Kartenübersicht und die Online-Version.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="index">
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="index.html">Lucky Shutdown</a>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" data-i18n-aria-label="lang.ariaLabel" aria-label="Sprache wählen">
+        <button type="button" class="lang-btn is-active" data-lang="de" aria-pressed="true"><span class="lang-flag">🇩🇪</span><span class="lang-code">DE</span></button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false"><span class="lang-flag">🇬🇧</span><span class="lang-code">EN</span></button>
+      </div>
+      <a class="nav-buy is-soon" href="#kaufen" data-i18n="nav.buy">Bald erhältlich</a>
+      <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="navMenu" data-i18n-aria-label="nav.menuLabel" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div id="navMenu" class="nav-menu" hidden>
+    <ul>
+      <li><a href="regeln.html" data-i18n="nav.rules">Spielregeln</a></li>
+      <li><a href="karten.html" data-i18n="nav.cards">Alle Karten</a></li>
+      <li><a href="#online" data-i18n="nav.online">Online spielen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Lucky Shutdown</h1>
+    <p class="tagline" data-i18n="idx.hero.tagline">
+      Das schnelle Ablege-Kartenspiel für 2–5&nbsp;Spieler: clever ablegen,
+      Farben erzwingen, Magic-Karten im richtigen Moment ausspielen – und als
+      Erster alle Karten los sein.
+    </p>
+
+    <div class="box3d-wrap">
+      <div class="box3d-stage" id="box3dStage" data-i18n-aria-label="idx.hero.box3dLabel" aria-label="3D-Ansicht der Verpackung, ziehen zum Drehen">
+        <div class="box3d-cube" id="box3dCube">
+          <div class="box3d-face front"><img src="assets/box/front.svg" data-i18n-alt="alt.boxFront" alt="Verpackung Vorderseite" draggable="false"></div>
+          <div class="box3d-face back"><img src="assets/box/back.svg" data-i18n-alt="alt.boxBack" alt="Verpackung Rückseite" draggable="false"></div>
+          <div class="box3d-face right"><img src="assets/box/right.svg" alt="" draggable="false"></div>
+          <div class="box3d-face left"><img src="assets/box/left.svg" alt="" draggable="false"></div>
+          <div class="box3d-face top"><img src="assets/box/top.svg" alt="" draggable="false"></div>
+          <div class="box3d-face bottom"><img src="assets/box/bottom.svg" alt="" draggable="false"></div>
+        </div>
+      </div>
+    </div>
+    <p class="drag-hint" data-i18n="idx.hero.dragHint">Ziehen zum Drehen</p>
+
+    <div class="cta-row">
+      <a class="btn btn-secondary btn-lg" href="#ablauf" data-i18n="idx.hero.cta.howto">So läuft eine Partie</a>
+      <a class="btn btn-primary btn-lg" href="regeln.html" data-i18n="idx.hero.cta.rules">Regeln</a>
+      <a class="btn btn-secondary btn-lg" href="karten.html" data-i18n="idx.hero.cta.cards">Alle Karten ansehen</a>
+    </div>
+  </div>
+</header>
+
+<section id="ablauf" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="idx.ablauf.eyebrow">In 30 Sekunden</p>
+      <h2 class="section-title" data-i18n="idx.ablauf.title">So läuft eine Partie</h2>
+      <p class="section-lede" data-i18n="idx.ablauf.lede">Das Grundprinzip ist in einer halben Minute erklärt. Die Feinheiten stehen in den Regeln.</p>
+    </div>
+
+    <div class="quick-steps">
+      <div class="quick-step">
+        <h3 data-i18n="idx.step1.h">Karten loswerden</h3>
+        <p data-i18n="idx.step1.p">Jeder startet mit 3&nbsp;verdeckten, 3&nbsp;offenen und 3&nbsp;Handkarten. Wer zuerst alles ablegt, gewinnt.</p>
+      </div>
+      <div class="quick-step">
+        <h3 data-i18n="idx.step2.h">Gleich oder höher</h3>
+        <p data-i18n="idx.step2.p">Reihum legst du auf den Ablagestapel – mindestens so hoch wie die oberste Karte, oder eine Magic-Karte.</p>
+      </div>
+      <div class="quick-step">
+        <h3 data-i18n="idx.step3.h">Es kann sich alles drehen</h3>
+        <p data-i18n="idx.step3.p">Farbe erzwingen, Magic sperren, aussetzen lassen, Stapel löschen: Die Spezialkarten drehen jede Situation.</p>
+      </div>
+      <div class="quick-step">
+        <h3 data-i18n="idx.step4.h">Nicht legbar? Aufnehmen</h3>
+        <p data-i18n="idx.step4.p">Wer nichts legen kann, nimmt den ganzen Ablagestapel auf die Hand. Der letzte mit Karten verliert die Runde.</p>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:44px"><a class="link-arrow" href="regeln.html" data-i18n="idx.ablauf.linkAll">Die vollständigen Regeln lesen</a></p>
+  </div>
+</section>
+
+<section id="physisch">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="idx.physisch.eyebrow">Physisch &amp; digital</p>
+      <h2 class="section-title" data-i18n="idx.physisch.title">Ein Deck, 48&nbsp;Karten, echtes Tischgefühl – oder am liebsten am Bildschirm?</h2>
+      <p class="section-lede" data-i18n="idx.physisch.lede">
+        Lucky Shutdown gibt es in zwei Ausführungen: zum Anfassen am Tisch – mischen,
+        austeilen, loslegen – oder digital, ganz wie du magst.
+      </p>
+    </div>
+
+    <div class="paths">
+      <div class="path-card">
+        <p class="path-kicker" data-i18n="idx.path1.kicker">Physische Version</p>
+        <h3 data-i18n="idx.path1.h">Am Tisch spielen</h3>
+        <p data-i18n="idx.path1.p">Die vollständigen Regeln für die Kartenversion – Aufbau, Spielzug und Sonderfälle. Strukturiert zum schnellen Nachschlagen.</p>
+        <ul>
+          <li data-i18n="idx.path1.li1">Schritt-für-Schritt-Aufbau</li>
+          <li data-i18n="idx.path1.li2">Jede Karte nach gleichem Schema erklärt</li>
+          <li data-i18n="idx.path1.li3">„Schnell erklärt" plus aufklappbare Details</li>
+        </ul>
+        <a class="btn btn-primary" href="regeln.html" data-i18n="idx.path1.btn">Zu den Regeln</a>
+      </div>
+
+      <div class="path-card digital" id="online">
+        <p class="path-kicker" data-i18n="idx.path2.kicker">Web-App</p>
+        <h3><span data-i18n="idx.path2.h">Online spielen</span> <span class="badge-soon" data-i18n="idx.path2.badge">bald verfügbar</span></h3>
+        <p data-i18n="idx.path2.p">Die digitale Version von Lucky Shutdown – als eigene Erfahrung mit geführten Zügen. Ideal, um die Regeln kennenzulernen oder ohne physisches Deck zu spielen.</p>
+        <ul>
+          <li data-i18n="idx.path2.li1">Führt Schritt für Schritt durch den Zug</li>
+          <li data-i18n="idx.path2.li2">Gegen den Computer oder zu mehreren</li>
+          <li data-i18n="idx.path2.li3">Keine Installation – läuft im Browser</li>
+        </ul>
+        <a class="btn btn-primary" aria-disabled="true" href="#online" data-i18n="idx.path2.btn">Startet bald</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="karten-teaser" class="section-cream2">
+  <div class="wrap-mid">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="idx.ktTeaser.eyebrow">Kartenübersicht</p>
+      <h2 class="section-title" data-i18n="idx.ktTeaser.title">Lerne die Karten kennen</h2>
+      <p class="section-lede" data-i18n="idx.ktTeaser.lede">
+        Zahlenkarten, drei Funktionszahlen und die Magic-Karten. Blättere durch das
+        Rondell und springe von jeder Karte direkt zur Regel.
+      </p>
+    </div>
+
+    <div class="carousel is-compact" id="carousel">
+      <div class="carousel-stage" data-i18n-aria-label="carousel.stageLabel" aria-label="Kartenkarussell, ziehen zum Blättern">
+        <button class="carousel-arrow left" type="button" data-i18n-aria-label="carousel.prevLabel" aria-label="Vorherige Karte">&#8249;</button>
+        <div class="carousel-drum">
+          <div class="carousel-card"
+               data-type="Zahlenkarte" data-i18n-type="idx.card.zahl.type"
+               data-name="Zahlenkarten 13–21" data-i18n-name="idx.card.zahl.name"
+               data-fn="Der Grundbaustein. Zählt nur mit ihrem Wert." data-i18n-fn="idx.card.zahl.fn"
+               data-href="karten.html#karte-zahl"><img src="assets/cards/21-amber.svg" data-i18n-alt="alt.zahl21" alt="Zahlenkarte 21" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Zahlenkarte · Funktion" data-i18n-type="idx.card.typeNumberFn"
+               data-name="Die 15 – Farbzwang" data-i18n-name="idx.card.15.name"
+               data-fn="Legt eine Pflichtfarbe fest. Der Nächste darf nur noch diese Farbe legen – Wert egal." data-i18n-fn="idx.card.15.fn"
+               data-href="karten.html#karte-15"><img src="assets/cards/15-amber.svg" data-i18n-alt="alt.15" alt="Karte 15, Farbzwang" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Zahlenkarte · Funktion" data-i18n-type="idx.card.typeNumberFn"
+               data-name="Die 17 – Magic-Sperre" data-i18n-name="idx.card.17.name"
+               data-fn="Sperrt alle Magic-Karten, solange sie oben auf dem Ablagestapel liegt." data-i18n-fn="idx.card.17.fn"
+               data-href="karten.html#karte-17"><img src="assets/cards/17-amber.svg" data-i18n-alt="alt.17" alt="Karte 17, Magic-Sperre" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Zahlenkarte · Funktion" data-i18n-type="idx.card.typeNumberFn"
+               data-name="Die 19 – Aussetzen" data-i18n-name="idx.card.19.name"
+               data-fn="Der nächste Spieler setzt einen Zug aus. Mehrere 19er = mehrere Aussetzer." data-i18n-fn="idx.card.19.fn"
+               data-href="karten.html#karte-19"><img src="assets/cards/19-cyan.svg" data-i18n-alt="alt.19" alt="Karte 19, Aussetzen" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Magic-Karte" data-i18n-type="idx.card.typeMagic"
+               data-name="Stapel löschen" data-i18n-name="idx.card.res.name"
+               data-fn="Entfernt den kompletten Ablagestapel. Du beginnst sofort einen neuen Zug." data-i18n-fn="idx.card.res.fn"
+               data-href="karten.html#karte-res"><img src="assets/cards/magic-reset-dual.svg" data-i18n-alt="alt.res" alt="Magic-Karte Stapel löschen" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Magic-Karte" data-i18n-type="idx.card.typeMagic"
+               data-name="Schieben" data-i18n-name="idx.card.pss.name"
+               data-fn="Reicht die darunter liegende Karte an den nächsten Spieler weiter." data-i18n-fn="idx.card.pss.fn"
+               data-href="karten.html#karte-pss"><img src="assets/cards/magic-pass-dual.svg" data-i18n-alt="alt.pss" alt="Magic-Karte Schieben" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Magic-Karte" data-i18n-type="idx.card.typeMagic"
+               data-name="Frei Spiel" data-i18n-name="idx.card.wld.name"
+               data-fn="Der nächste Spieler darf eine beliebige Karte legen." data-i18n-fn="idx.card.wld.fn"
+               data-href="karten.html#karte-wld"><img src="assets/cards/magic-wild-dual.svg" data-i18n-alt="alt.wld" alt="Magic-Karte Frei Spiel" draggable="false"></div>
+          <div class="carousel-card"
+               data-type="Magic-Karte · Werte 16/17/18" data-i18n-type="idx.card.udc.type"
+               data-name="Unterbieten" data-i18n-name="idx.card.udc.name"
+               data-fn="Zwingt den nächsten Spieler, eine Zahl kleiner als der aufgedruckte Wert zu legen." data-i18n-fn="idx.card.udc.fn"
+               data-href="karten.html#karte-udc"><img src="assets/cards/magic-underbid-17-dual.svg" data-i18n-alt="alt.udc" alt="Magic-Karte Unterbieten" draggable="false"></div>
+        </div>
+        <button class="carousel-arrow right" type="button" data-i18n-aria-label="carousel.nextLabel" aria-label="Nächste Karte">&#8250;</button>
+      </div>
+      <div class="carousel-info">
+        <p class="carousel-type"></p>
+        <p class="carousel-name"></p>
+        <p class="carousel-fn"></p>
+        <a class="carousel-more link-arrow" href="karten.html" data-i18n="carousel.more">Mehr erfahren</a>
+      </div>
+      <div class="carousel-dots" aria-hidden="true"></div>
+    </div>
+
+    <p style="text-align:center;margin-top:36px"><a class="btn btn-secondary btn-lg" href="karten.html" data-i18n="idx.ktTeaser.cta">Alle Karten ansehen</a></p>
+  </div>
+</section>
+
+<section id="kaufen" class="buy-cta">
+  <div class="wrap">
+    <h2 data-i18n="idx.buy.title">Lucky Shutdown kaufen</h2>
+    <p data-i18n="idx.buy.p">Die physische Ausgabe erscheint bald. Trag dich in den Newsletter ein und erfahre als Erste, wann es losgeht.</p>
+    <a class="btn btn-primary btn-lg" style="background:var(--gold-bright);color:var(--ink)" href="#newsletter" data-i18n="idx.buy.cta">Benachrichtigt werden</a>
+    <p class="placeholder-note" style="margin-top:22px" data-i18n="idx.buy.note">Shop folgt – dieser Bereich ist für die spätere Kaufabwicklung vorgesehen</p>
+  </div>
+</section>
+
+<footer class="site-footer" id="newsletter">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Lucky Shutdown</h4>
+        <ul>
+          <li><a href="regeln.html" data-i18n="nav.rules">Spielregeln</a></li>
+          <li><a href="karten.html" data-i18n="nav.cards">Alle Karten</a></li>
+          <li><a href="#online" data-i18n="nav.online">Online spielen</a></li>
+          <li><a href="#kaufen" data-i18n="footer.buyLink">Kaufen</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4 data-i18n="footer.newsletterTitle">Newsletter</h4>
+        <p data-i18n="footer.newsletterText">Erfahre, wann das physische Spiel und die Online-Version verfügbar sind.</p>
+        <form class="row" onsubmit="return false">
+          <input type="email" data-i18n-placeholder="footer.emailPlaceholder" placeholder="Deine E-Mail" data-i18n-aria-label="footer.emailAriaLabel" aria-label="E-Mail-Adresse">
+          <button type="submit" data-i18n="footer.signupButton">Anmelden</button>
+        </form>
+        <span class="placeholder-note" style="margin-top:10px" data-i18n="footer.placeholderNote">Platzhalter – noch nicht aktiv</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Lucky Shutdown</span>
+      <a href="#" data-i18n="footer.imprint">Impressum (Platzhalter)</a>
+      <a href="#" data-i18n="footer.privacy">Datenschutz (Platzhalter)</a>
+    </div>
+  </div>
+</footer>
+
+<script src="i18n.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>

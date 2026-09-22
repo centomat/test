@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-53 -53 106 106">
+<defs>
+<clipPath id="cl"><path d="M -50,-50 h 50 v 100 h -50 Z"/></clipPath>
+<clipPath id="cr"><path d="M 0,-50 h 50 v 100 h -50 Z"/></clipPath>
+<linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#EFD68E"/>
+<stop offset="50%" stop-color="#D8B24C"/>
+<stop offset="100%" stop-color="#EFD68E"/>
+</linearGradient>
+</defs>
+<circle cx="0" cy="0" r="50" fill="#FF8A00" clip-path="url(#cl)"/>
+<circle cx="0" cy="0" r="50" fill="#00AEC0" clip-path="url(#cr)"/>
+<circle cx="0" cy="0" r="50" fill="none" stroke="url(#gold)" stroke-width="2.4"/>
+<circle cx="0" cy="0" r="31.5" fill="none" stroke="#F6F1E4" stroke-width="5.04" stroke-linecap="round" stroke-dasharray="154.35000000000002 28.35" transform="rotate(-90 0 0)"/><path transform="translate(0,0)" fill="#F6F1E4" d="M0,-10.71 L2.3562000000000003,-2.3562000000000003 L10.71,0 L2.3562000000000003,2.3562000000000003 L0,10.71 L-2.3562000000000003,2.3562000000000003 L-10.71,0 L-2.3562000000000003,-2.3562000000000003 Z"/>
+</svg>
