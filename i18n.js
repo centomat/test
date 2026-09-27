@@ -65,10 +65,16 @@
     /* ================= Kartenfunktionen (nur noch karten.html - die
        Spielregeln verweisen jetzt dorthin statt sie zu duplizieren)
        ================= */
+    'cardfn.label.count': 'Copies in the deck',
     'cardfn.label.fn': 'Function',
     'cardfn.label.playable': 'When playable',
     'cardfn.label.after': 'What happens next',
     'cardfn.label.special': 'Important special rule',
+
+    'cardfn.count.zahl': '4× per value (2× orange + 2× blue)',
+    'cardfn.count.four': '4× (2× orange + 2× blue)',
+    'cardfn.count.three': '3× (orange, blue, dual-colour)',
+    'cardfn.count.udc': '1× per value (16/17/18)',
 
     'cardfn.zahl.title': 'Number cards 13, 14, 16, 18, 20, 21',
     'cardfn.zahl.type': 'Number card',
