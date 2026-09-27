@@ -79,6 +79,7 @@
 
   var elType = root.querySelector('.carousel-type');
   var elName = root.querySelector('.carousel-name');
+  var elCount = root.querySelector('.carousel-count');
   var elFn = root.querySelector('.carousel-fn');
   var elDetail = root.querySelector('.carousel-detail');
   var elMore = root.querySelector('.carousel-more');
@@ -89,6 +90,10 @@
   function fillInfo(c) {
     if (elType) elType.textContent = c.dataset.type || '';
     if (elName) elName.textContent = c.dataset.name || '';
+    if (elCount) {
+      elCount.textContent = c.dataset.count || '';
+      elCount.hidden = !c.dataset.count;
+    }
     if (elFn) elFn.textContent = c.dataset.fn || '';
     if (elDetail) {
       elDetail.textContent = c.dataset.detail || '';

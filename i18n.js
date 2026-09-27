@@ -185,6 +185,14 @@
     'idx.card.udc.name': 'Underbid',
     'idx.card.udc.fn': 'Forces the next player to play a number lower than the printed value.',
 
+    /* Wie oft jede Karte im Deck vorkommt - dieselben Keys werden auf
+       index.html und karten.html fuer dieselbe Karte wiederverwendet,
+       da der Text dort identisch ist. */
+    'card.count.zahl': '4× per value in the deck',
+    'card.count.four': '4× in the deck',
+    'card.count.three': '3× in the deck',
+    'card.count.udc': '1× per value in the deck',
+
     /* ================= karten.html ================= */
     'krt.pageTitle': 'All Cards',
     'krt.pageLede': 'Browse the carousel – every card is explained right below it. Use “Learn more” to jump to the full rule.',
@@ -335,7 +343,7 @@
   };
 
   var ATTRS = ['alt', 'aria-label', 'placeholder'];
-  var CARD_FIELDS = ['type', 'name', 'fn', 'detail'];
+  var CARD_FIELDS = ['type', 'name', 'fn', 'detail', 'count'];
 
   var originals = new WeakMap();
   var originalTitle = document.title;

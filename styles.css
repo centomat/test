@@ -553,6 +553,17 @@ h2.section-title {
   color: var(--ink-mute); margin: 0 0 5px;
 }
 .carousel-name { font-size: 21px; font-weight: 700; letter-spacing: -0.015em; margin: 0 0 8px; }
+.carousel-count {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-mute);
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 11px;
+  margin: 0 0 12px;
+}
 .carousel-fn { font-size: 15px; color: var(--ink); font-weight: 550; margin: 0 0 10px; line-height: 1.5; }
 .carousel-detail { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.6; }
 .carousel-more { font-size: 13.5px; }
