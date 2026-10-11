@@ -56,21 +56,21 @@
 
         <div class="carousel-card"
              data-type="Zahlenkarte mit Funktion" data-i18n-type="krt.card.typeNumberWithEffect"
-             data-name="Die 15 – Farbzwang" data-i18n-name="idx.card.15.name"
-             data-fn="Legt eine Pflichtfarbe fest – der nächste Spieler darf nur noch diese Farbe legen." data-i18n-fn="krt.card.15.fn"
-             data-detail="Nach einer 15 zählt nur die Farbe, nicht der Wert – auch niedrigere Karten sind erlaubt. Zweifarbige Karten passen immer. Der Farbzwang gilt ausnahmslos, auch für jede Magic-Karte. Legst du mehrere gleiche Karten, muss nur eine davon die Farbe treffen – z. B. eine orange 19 und zwei blaue 19 zusammen. Liegen mehrere 15er, gilt die Farbe der obersten." data-i18n-detail="krt.card.15.detail"
+             data-name="Die 15 – Magic-Sperre" data-i18n-name="idx.card.15.name"
+             data-fn="Sperrt alle Magic-Karten, solange sie oben auf dem Ablagestapel liegt." data-i18n-fn="krt.card.15.fn"
+             data-detail="Der nächste Spieler darf nur eine Zahl 15 oder höher legen – auch keine Magic-Karte. Erst wenn eine andere Karte oben liegt, sind Magic-Karten wieder frei." data-i18n-detail="krt.card.15.detail"
              data-count="4× im Deck" data-i18n-count="card.count.four"
              data-href="#karte-15">
-          <img src="assets/cards/15-amber.svg" data-i18n-alt="alt.15" alt="Karte 15, Farbzwang" draggable="false"></div>
+          <img src="assets/cards/15-amber.svg" data-i18n-alt="alt.15" alt="Karte 15, Magic-Sperre" draggable="false"></div>
 
         <div class="carousel-card"
              data-type="Zahlenkarte mit Funktion" data-i18n-type="krt.card.typeNumberWithEffect"
-             data-name="Die 17 – Magic-Sperre" data-i18n-name="idx.card.17.name"
-             data-fn="Sperrt alle Magic-Karten, solange sie oben auf dem Ablagestapel liegt." data-i18n-fn="idx.card.17.fn"
-             data-detail="Der nächste Spieler darf nur eine Zahl 17 oder höher legen – auch keine Magic-Karte. Erst wenn eine andere Karte oben liegt, sind Magic-Karten wieder frei." data-i18n-detail="krt.card.17.detail"
+             data-name="Die 17 – Farbzwang" data-i18n-name="idx.card.17.name"
+             data-fn="Legt eine Pflichtfarbe fest. Der Nächste darf nur noch diese Farbe legen – Wert egal." data-i18n-fn="idx.card.17.fn"
+             data-detail="Nach einer 17 zählt nur die Farbe, nicht der Wert – auch niedrigere Karten sind erlaubt. Zweifarbige Karten passen immer. Der Farbzwang gilt ausnahmslos, auch für jede Magic-Karte. Legst du mehrere gleiche Karten, muss nur eine davon die Farbe treffen – z. B. eine orange 19 und zwei blaue 19 zusammen. Liegen mehrere 17er, gilt die Farbe der obersten." data-i18n-detail="krt.card.17.detail"
              data-count="4× im Deck" data-i18n-count="card.count.four"
              data-href="#karte-17">
-          <img src="assets/cards/17-amber.svg" data-i18n-alt="alt.17" alt="Karte 17, Magic-Sperre" draggable="false"></div>
+          <img src="assets/cards/17-amber.svg" data-i18n-alt="alt.17" alt="Karte 17, Farbzwang" draggable="false"></div>
 
         <div class="carousel-card"
              data-type="Zahlenkarte mit Funktion" data-i18n-type="krt.card.typeNumberWithEffect"
@@ -85,7 +85,7 @@
              data-type="Magic-Karte" data-i18n-type="idx.card.typeMagic"
              data-name="Stapel löschen" data-i18n-name="idx.card.res.name"
              data-fn="Entfernt den kompletten Ablagestapel – du beginnst sofort einen neuen Zug." data-i18n-fn="krt.card.res.fn"
-             data-detail="Fast immer spielbar, außer eine 17 liegt oben. Bei Farbzwang muss die Karte die geforderte Farbe treffen oder zweifarbig sein. Liegen 3× Stapel löschen übereinander, ist das ein Drilling und der Stapel verschwindet ebenfalls." data-i18n-detail="krt.card.res.detail"
+             data-detail="Fast immer spielbar, außer eine 15 liegt oben. Bei Farbzwang muss die Karte die geforderte Farbe treffen oder zweifarbig sein. Liegen 3× Stapel löschen übereinander, ist das ein Drilling und der Stapel verschwindet ebenfalls." data-i18n-detail="krt.card.res.detail"
              data-count="3× im Deck" data-i18n-count="card.count.three"
              data-href="#karte-res">
           <img src="assets/cards/magic-reset-dual.svg" data-i18n-alt="alt.res" alt="Magic-Karte Stapel löschen" draggable="false"></div>
@@ -165,31 +165,31 @@
     </article>
 
     <article class="cardfn" id="karte-15">
-      <img src="assets/cards/15-amber.svg" data-i18n-alt="alt.15" alt="Karte 15, Farbzwang">
+      <img src="assets/cards/15-amber.svg" data-i18n-alt="alt.15" alt="Karte 15, Magic-Sperre">
       <div class="cardfn-body">
-        <h3 data-i18n="cardfn.15.title">Die 15 – Farbzwang</h3>
+        <h3 data-i18n="cardfn.15.title">Die 15 – Magic-Sperre</h3>
         <p class="cardfn-type" data-i18n="cardfn.typeNumberWithEffect">Zahlenkarte mit Funktion</p>
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.four">4× (2× Orange + 2× Blau)</dd></div>
-          <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.15.fn">Legt eine <strong>Pflichtfarbe</strong> fest – Orange oder Blau, je nach Farbe der 15.</dd></div>
+          <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.15.fn">Sperrt <strong>alle</strong> Magic-Karten, solange die 15 oben liegt.</dd></div>
           <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.playableStandard">Wenn ihr Wert <strong>gleich hoch oder höher</strong> ist als die oberste Karte.</dd></div>
-          <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.15.after">Der nächste Spieler darf <strong>nur Karten der geforderten Farbe</strong> (oder zweifarbige Karten) legen. Der Wert ist dabei egal – auch <strong>niedrigere</strong> Karten sind erlaubt. Legt jemand eine weitere 15, gilt ab dann deren Farbe für den nächsten Spieler.</dd></div>
-          <div><dt data-i18n="cardfn.label.special">Wichtige Sonderregel</dt><dd data-i18n="cardfn.15.special">Der Farbzwang gilt <strong>ausnahmslos für alle Karten</strong> – auch für jede Magic-Karte. Spielbar ist nur, was die geforderte Farbe hat oder zweifarbig ist. Legst du mehrere gleiche Karten, muss <strong>nur eine davon</strong> die geforderte Farbe haben – die übrigen dürfen eine andere Farbe haben, solange sie denselben Wert haben. Beispiel: Auf eine orange 15 darfst du eine orange 19 und zwei blaue 19 zusammen legen.</dd></div>
+          <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.15.after">Der nächste Spieler darf <strong>keine Magic-Karte</strong> spielen.</dd></div>
+          <div><dt data-i18n="cardfn.label.special">Wichtige Sonderregel</dt><dd data-i18n="cardfn.15.special">Die Sperre ist absolut. Erst wenn eine andere Karte oben liegt, sind Magic-Karten wieder erlaubt.</dd></div>
         </dl>
       </div>
     </article>
 
     <article class="cardfn" id="karte-17">
-      <img src="assets/cards/17-amber.svg" data-i18n-alt="alt.17" alt="Karte 17, Magic-Sperre">
+      <img src="assets/cards/17-amber.svg" data-i18n-alt="alt.17" alt="Karte 17, Farbzwang">
       <div class="cardfn-body">
-        <h3 data-i18n="cardfn.17.title">Die 17 – Magic-Sperre</h3>
+        <h3 data-i18n="cardfn.17.title">Die 17 – Farbzwang</h3>
         <p class="cardfn-type" data-i18n="cardfn.typeNumberWithEffect">Zahlenkarte mit Funktion</p>
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.four">4× (2× Orange + 2× Blau)</dd></div>
-          <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.17.fn">Sperrt <strong>alle</strong> Magic-Karten, solange die 17 oben liegt.</dd></div>
+          <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.17.fn">Legt eine <strong>Pflichtfarbe</strong> fest – Orange oder Blau, je nach Farbe der 17.</dd></div>
           <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.playableStandard">Wenn ihr Wert <strong>gleich hoch oder höher</strong> ist als die oberste Karte.</dd></div>
-          <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.17.after">Der nächste Spieler darf <strong>keine Magic-Karte</strong> spielen.</dd></div>
-          <div><dt data-i18n="cardfn.label.special">Wichtige Sonderregel</dt><dd data-i18n="cardfn.17.special">Die Sperre ist absolut. Erst wenn eine andere Karte oben liegt, sind Magic-Karten wieder erlaubt.</dd></div>
+          <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.17.after">Der nächste Spieler darf <strong>nur Karten der geforderten Farbe</strong> (oder zweifarbige Karten) legen. Der Wert ist dabei egal – auch <strong>niedrigere</strong> Karten sind erlaubt. Legt jemand eine weitere 17, gilt ab dann deren Farbe für den nächsten Spieler.</dd></div>
+          <div><dt data-i18n="cardfn.label.special">Wichtige Sonderregel</dt><dd data-i18n="cardfn.17.special">Der Farbzwang gilt <strong>ausnahmslos für alle Karten</strong> – auch für jede Magic-Karte. Spielbar ist nur, was die geforderte Farbe hat oder zweifarbig ist. Legst du mehrere gleiche Karten, muss <strong>nur eine davon</strong> die geforderte Farbe haben – die übrigen dürfen eine andere Farbe haben, solange sie denselben Wert haben. Beispiel: Auf eine orange 17 darfst du eine orange 19 und zwei blaue 19 zusammen legen.</dd></div>
         </dl>
       </div>
     </article>
@@ -217,7 +217,7 @@
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.three">3× (Orange, Blau, Zweifarbig)</dd></div>
           <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.res.fn">Entfernt den <strong>kompletten Ablagestapel</strong> aus dem Spiel.</dd></div>
-          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.res.playable">Fast immer – <strong>außer</strong> eine 17 liegt oben (Magic-Sperre). Bei Farbzwang muss die Karte die geforderte Farbe treffen oder zweifarbig sein.</dd></div>
+          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.res.playable">Fast immer – <strong>außer</strong> eine 15 liegt oben (Magic-Sperre). Bei Farbzwang muss die Karte die geforderte Farbe treffen oder zweifarbig sein.</dd></div>
           <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.res.after">Der Ablagestapel ist weg und du <strong>beginnst einen neuen Zug</strong> mit einer beliebigen Karte.</dd></div>
         </dl>
       </div>
@@ -231,7 +231,7 @@
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.three">3× (Orange, Blau, Zweifarbig)</dd></div>
           <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.pss.fn">Reicht die aktuelle Aufgabe an den <strong>nächsten Spieler</strong> weiter, ohne dass du sie selbst erfüllen musst.</dd></div>
-          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.pss.playable">Fast immer – <strong>außer</strong> eine 17 liegt oben. Bei Farbzwang muss die Karte die Farbe treffen oder zweifarbig sein.</dd></div>
+          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.pss.playable">Fast immer – <strong>außer</strong> eine 15 liegt oben. Bei Farbzwang muss die Karte die Farbe treffen oder zweifarbig sein.</dd></div>
           <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.pss.after">Die Karte <strong>unter</strong> dem Schieben bleibt maßgeblich. Der nächste Spieler muss also weiterhin genau diese Karte schlagen – oder, wenn darunter eine 19 liegt, aussetzen.</dd></div>
         </dl>
       </div>
@@ -245,7 +245,7 @@
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.three">3× (Orange, Blau, Zweifarbig)</dd></div>
           <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.wld.fn">Hebt <strong>alle Beschränkungen</strong> für den nächsten Spieler auf.</dd></div>
-          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.wld.playable">Fast immer – <strong>außer</strong> eine 17 liegt oben. Bei Farbzwang muss die Frei-Spiel-Karte <strong>selbst</strong> die geforderte Farbe treffen oder zweifarbig sein.</dd></div>
+          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.wld.playable">Fast immer – <strong>außer</strong> eine 15 liegt oben. Bei Farbzwang muss die Frei-Spiel-Karte <strong>selbst</strong> die geforderte Farbe treffen oder zweifarbig sein.</dd></div>
           <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.wld.after">Der nächste Spieler darf eine <strong>beliebige</strong> Karte legen – egal welcher Wert, egal welche Farbe.</dd></div>
         </dl>
       </div>
@@ -259,7 +259,7 @@
         <dl>
           <div><dt data-i18n="cardfn.label.count">Anzahl im Deck</dt><dd data-i18n="cardfn.count.udc">1× je Wert (16/17/18)</dd></div>
           <div><dt data-i18n="cardfn.label.fn">Funktion</dt><dd data-i18n="cardfn.udc.fn">Zwingt den nächsten Spieler, <strong>niedriger</strong> zu legen statt höher.</dd></div>
-          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.udc.playable">Fast immer – <strong>außer</strong> eine 17 liegt oben. Jede Unterbieten-Karte hat eine <strong>feste Farbe</strong> (16&nbsp;Blau, 17&nbsp;zweifarbig, 18&nbsp;Orange); bei Farbzwang zählt daher, ob sie farblich passt.</dd></div>
+          <div><dt data-i18n="cardfn.label.playable">Wann spielbar</dt><dd data-i18n="cardfn.udc.playable">Fast immer – <strong>außer</strong> eine 15 liegt oben. Jede Unterbieten-Karte hat eine <strong>feste Farbe</strong> (16&nbsp;Blau, 17&nbsp;zweifarbig, 18&nbsp;Orange); bei Farbzwang zählt daher, ob sie farblich passt.</dd></div>
           <div><dt data-i18n="cardfn.label.after">Was passiert danach</dt><dd data-i18n="cardfn.udc.after">Der nächste Spieler muss eine Zahl <strong>kleiner als der aufgedruckte Wert</strong> legen (bei Unterbieten&nbsp;16 also 13, 14 oder 15) – oder eine Magic-Karte.</dd></div>
         </dl>
       </div>
