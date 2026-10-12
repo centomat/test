@@ -17,7 +17,7 @@
      jedem Sprachwechsel wird das Event "ls:i18n" gefeuert, auf das main.js
      hoert, um die Anzeige aufzufrischen).
 
-   <body data-page="index|karten|regeln"> waehlt den Browser-Tab-Titel. */
+   <body data-page="index"> waehlt den Browser-Tab-Titel. */
 
 (function () {
   'use strict';
@@ -62,7 +62,7 @@
     'alt.boxFront': 'Packaging front',
     'alt.boxBack': 'Packaging back',
 
-    /* ================= Kartenfunktionen (nur noch karten.html - die
+    /* ================= Kartenfunktionen (nur noch im Abschnitt "Alle Karten" - die
        Spielregeln verweisen jetzt dorthin statt sie zu duplizieren)
        ================= */
     'cardfn.label.count': 'Copies in the deck',
@@ -160,46 +160,35 @@
     'idx.path2.li3': 'No installation – runs in the browser',
     'idx.path2.btn': 'Coming soon',
 
-    'idx.ktTeaser.eyebrow': 'Card overview',
-    'idx.ktTeaser.title': 'Get to know the cards',
-    'idx.ktTeaser.lede': 'Number cards, three special numbers and the magic cards. Browse the carousel and jump from any card straight to its rule.',
-    'idx.ktTeaser.cta': 'View all cards',
 
     'idx.buy.title': 'Buy Lucky Shutdown',
     'idx.buy.p': 'The physical edition is coming soon. Sign up for the newsletter to be among the first to know when it launches.',
     'idx.buy.cta': 'Get notified',
     'idx.buy.note': 'Shop coming soon – this area is reserved for the future checkout',
 
-    'idx.card.zahl.type': 'Number card',
-    'idx.card.zahl.name': 'Number cards 13–21',
     'idx.card.zahl.fn': 'The basic building block. Counts only by its value.',
-    'idx.card.typeNumberFn': 'Number card · effect',
     'idx.card.15.name': 'The 15 – Magic Lock',
-    'idx.card.15.fn': 'Locks out all magic cards while it is on top of the discard pile.',
     'idx.card.17.name': 'The 17 – Colour Lock',
     'idx.card.17.fn': 'Sets a required colour. The next player may only play that colour – value does not matter.',
     'idx.card.19.name': 'The 19 – Skip',
-    'idx.card.19.fn': 'The next player skips a turn. Several 19s = several skips.',
     'idx.card.typeMagic': 'Magic card',
     'idx.card.res.name': 'Clear Pile',
-    'idx.card.res.fn': 'Removes the entire discard pile. You immediately start a new turn.',
     'idx.card.pss.name': 'Pass',
     'idx.card.pss.fn': 'Passes the card underneath on to the next player.',
     'idx.card.wld.name': 'Wild',
     'idx.card.wld.fn': 'The next player may play any card.',
-    'idx.card.udc.type': 'Magic card · values 16/17/18',
     'idx.card.udc.name': 'Underbid',
     'idx.card.udc.fn': 'Forces the next player to play a number lower than the printed value.',
 
     /* Wie oft jede Karte im Deck vorkommt - dieselben Keys werden auf
-       index.html und karten.html fuer dieselbe Karte wiederverwendet,
+       Startseite und Kartenabschnitt fuer dieselbe Karte wiederverwendet,
        da der Text dort identisch ist. */
     'card.count.zahl': '4× per value in the deck',
     'card.count.four': '4× in the deck',
     'card.count.three': '3× in the deck',
     'card.count.udc': '1× per value in the deck',
 
-    /* ================= karten.html ================= */
+    /* ================= Abschnitt "Alle Karten" ================= */
     'krt.pageTitle': 'All Cards',
     'krt.pageLede': 'Browse the carousel – every card is explained right below it. Use “Learn more” to jump to the full rule.',
 
@@ -229,7 +218,7 @@
     'krt.cardfnHead.lede': 'The same explanation as in the rules – for quick reference right here.',
     'krt.fullRulesBtn': 'Go to the full rules',
 
-    /* ================= regeln.html ================= */
+    /* ================= Abschnitt "Spielregeln" ================= */
     'rgl.pageTitle': 'Rules',
     'rgl.pageLede': 'Everything you need for a round with the physical card game – from setup to the very last card.',
 
@@ -343,9 +332,7 @@
   };
 
   var PAGE_TITLES_EN = {
-    index: 'Lucky Shutdown – Card Game',
-    karten: 'Lucky Shutdown – All Cards',
-    regeln: 'Lucky Shutdown – Rules'
+    index: 'Lucky Shutdown – Card Game'
   };
 
   var ATTRS = ['alt', 'aria-label', 'placeholder'];

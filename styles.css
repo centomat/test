@@ -611,7 +611,12 @@ h2.section-title {
   padding: 68px 0 8px;
   text-align: center;
 }
-.page-head h1 {
+/* Abschnitte "Spielregeln" und "Alle Karten" der Einzelseite: der Kopf bringt
+   seinen Abstand selbst mit, deshalb kein zusaetzliches Section-Padding. */
+#regeln { padding: 0; border-top: 1px solid var(--line); }
+#karten { padding: 0 0 90px; }
+.page-head h1,
+.page-head h2 {
   font-size: clamp(34px, 5vw, 52px);
   font-weight: 700;
   letter-spacing: -0.025em;
