@@ -12,10 +12,6 @@
    - data-i18n-aria-label="key" -> aria-label-Attribut
    - data-i18n-placeholder="key"-> placeholder-Attribut
    - data-i18n-title="key"      -> title-Attribut (Browser-Tab, via <body data-page>)
-   - data-i18n-type/-name/-fn/-detail="key" -> dataset-Felder der Rondell-Karten
-     (main.js liest cards[i].dataset.type/name/fn/detail fuers Infofeld - nach
-     jedem Sprachwechsel wird das Event "ls:i18n" gefeuert, auf das main.js
-     hoert, um die Anzeige aufzufrischen).
 
    <body data-page="index"> waehlt den Browser-Tab-Titel. */
 
@@ -43,12 +39,6 @@
     'footer.imprint': 'Imprint (placeholder)',
     'footer.privacy': 'Privacy policy (placeholder)',
 
-    /* ---- Rondell-Steuerung (index + karten) ---- */
-    'carousel.stageLabel': 'Card carousel, drag to browse',
-    'carousel.prevLabel': 'Previous card',
-    'carousel.nextLabel': 'Next card',
-    'carousel.more': 'Learn more',
-
     /* ---- Alt-Texte fuer Kartenbilder (mehrfach verwendet) ---- */
     'alt.zahl21': 'Number card 21',
     'alt.15': 'Card 15, Magic Lock',
@@ -58,7 +48,6 @@
     'alt.pss': 'Magic card Pass',
     'alt.wld': 'Magic card Wild',
     'alt.udc': 'Magic card Underbid',
-    'alt.back': 'Card back',
     'alt.boxFront': 'Packaging front',
     'alt.boxBack': 'Packaging back',
 
@@ -166,51 +155,13 @@
     'idx.buy.cta': 'Get notified',
     'idx.buy.note': 'Shop coming soon – this area is reserved for the future checkout',
 
-    'idx.card.zahl.fn': 'The basic building block. Counts only by its value.',
-    'idx.card.15.name': 'The 15 – Magic Lock',
-    'idx.card.17.name': 'The 17 – Colour Lock',
-    'idx.card.17.fn': 'Sets a required colour. The next player may only play that colour – value does not matter.',
-    'idx.card.19.name': 'The 19 – Skip',
-    'idx.card.typeMagic': 'Magic card',
-    'idx.card.res.name': 'Clear Pile',
-    'idx.card.pss.name': 'Pass',
-    'idx.card.pss.fn': 'Passes the card underneath on to the next player.',
-    'idx.card.wld.name': 'Wild',
-    'idx.card.wld.fn': 'The next player may play any card.',
-    'idx.card.udc.name': 'Underbid',
-    'idx.card.udc.fn': 'Forces the next player to play a number lower than the printed value.',
 
     /* Wie oft jede Karte im Deck vorkommt - dieselben Keys werden auf
        Startseite und Kartenabschnitt fuer dieselbe Karte wiederverwendet,
        da der Text dort identisch ist. */
-    'card.count.zahl': '4× per value in the deck',
-    'card.count.four': '4× in the deck',
-    'card.count.three': '3× in the deck',
-    'card.count.udc': '1× per value in the deck',
 
     /* ================= Abschnitt "Alle Karten" ================= */
-    'krt.pageTitle': 'All Cards',
-    'krt.pageLede': 'Browse the carousel – every card is explained right below it. Use “Learn more” to jump to the full rule.',
 
-    'krt.card.zahl.type': 'Number card · values 13–21',
-    'krt.card.zahl.name': 'Number cards',
-    'krt.card.zahl.detail': 'Playable if its value is equal to or higher than the top card of the discard pile. You may play 1–4 cards of the same value together, colour does not matter. The values 13, 14, 16, 18, 20 and 21 have no special function – only 15, 17 and 19 do.',
-    'krt.card.typeNumberWithEffect': 'Number card with effect',
-    'krt.card.15.fn': 'Locks out all magic cards while it is on top of the discard pile.',
-    'krt.card.15.detail': 'The next player may only play a number 15 or higher – and no magic card either. Magic cards are free again only once a different card is on top.',
-    'krt.card.17.detail': 'After a 17, only the colour counts, not the value – lower cards are allowed too. Dual-colour cards always fit. The colour lock applies without exception, even to every magic card. If you play several matching cards, only one of them needs to match the colour – e.g. an orange 19 together with two blue 19s. If several 17s are played, the colour of the topmost one applies.',
-    'krt.card.19.fn': 'The next player skips a turn.',
-    'krt.card.19.detail': 'Several 19s played together skip that many players. If you would have to skip but can also play a 19, you may play it – the skip then moves on and the next player skips instead.',
-    'krt.card.res.fn': 'Removes the entire discard pile – you immediately start a new turn.',
-    'krt.card.res.detail': 'Playable almost anytime, except when a 15 is on top. Under a colour lock, the card must match the required colour or be dual-colour. If 3× Clear Pile are stacked together, that is a triple and the pile disappears too.',
-    'krt.card.pss.detail': 'The card underneath the Pass stays in effect – the next player must still beat that exact card (or skip, if it is a 19 underneath).',
-    'krt.card.wld.detail': 'The effect only kicks in once the Wild card has itself been legally played. Under a colour lock, it must therefore match the required colour itself, or be dual-colour. 3× Wild stacked together = a triple.',
-    'krt.card.udc.type': 'Magic card · values 16 / 17 / 18',
-    'krt.card.udc.detail': 'For Underbid 16, that is 13, 14 or 15 – or a magic card.',
-    'krt.card.back.type': 'Deck',
-    'krt.card.back.name': 'Card Back',
-    'krt.card.back.fn': 'Identical on all 48 cards.',
-    'krt.card.back.detail': 'Face-down table cards and the draw pile all look the same – a face-down card can never be identified in advance.',
 
     'krt.deckNote': 'The deck contains 48 cards in two colours – orange and blue; some cards are dual-colour and count for both.',
     'krt.cardfnHead.eyebrow': 'Card functions',
@@ -336,7 +287,6 @@
   };
 
   var ATTRS = ['alt', 'aria-label', 'placeholder'];
-  var CARD_FIELDS = ['type', 'name', 'fn', 'detail', 'count'];
 
   var originals = new WeakMap();
   var originalTitle = document.title;
@@ -354,11 +304,6 @@
     ATTRS.forEach(function (attr) {
       document.querySelectorAll('[data-i18n-' + attr + ']').forEach(function (el) {
         saveOrig(el, attr, el.getAttribute(attr));
-      });
-    });
-    CARD_FIELDS.forEach(function (field) {
-      document.querySelectorAll('[data-i18n-' + field + ']').forEach(function (el) {
-        saveOrig(el, field, el.dataset[field]);
       });
     });
   }
@@ -385,18 +330,6 @@
           el.setAttribute(attr, EN[key]);
         } else if (orig && orig[attr] !== undefined) {
           el.setAttribute(attr, orig[attr]);
-        }
-      });
-    });
-
-    CARD_FIELDS.forEach(function (field) {
-      document.querySelectorAll('[data-i18n-' + field + ']').forEach(function (el) {
-        var key = el.getAttribute('data-i18n-' + field);
-        var orig = originals.get(el);
-        if (isEn && EN[key] !== undefined) {
-          el.dataset[field] = EN[key];
-        } else if (orig && orig[field] !== undefined) {
-          el.dataset[field] = orig[field];
         }
       });
     });
