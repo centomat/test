@@ -219,7 +219,7 @@
     'rgl.c.matrix.k4': '… a 17 (colour lock)',
     'rgl.c.matrix.v4': 'Play a card of the <strong>shown colour</strong> (value does not matter, even lower) – or a magic card of that colour.',
     'rgl.c.matrix.k5': '… a 19 (skip)',
-    'rgl.c.matrix.v5': 'You are <strong>skipped</strong> – unless you play a 19 yourself.',
+    'rgl.c.matrix.v5': 'Whoever would be <strong>directly next</strong> skips – unless they play a 19 themselves. After that: at least a 19 or magic.',
     'rgl.c.matrix.kPass': '… a PASS',
     'rgl.c.matrix.vPass': 'The <strong>card underneath</strong> counts.',
     'rgl.c.matrix.k6': '… a WILD',
