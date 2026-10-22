@@ -113,12 +113,12 @@
     'idx.hero.tagline': 'The fast-paced discard card game for 2–5 players: play smart, force colours, unleash magic cards at the perfect moment – and be the first to get rid of all your cards.',
     'idx.hero.box3dLabel': '3D view of the packaging, drag to rotate',
     'idx.hero.dragHint': 'Drag to rotate',
-    'idx.hero.cta.howto': 'How a round works',
+    'idx.hero.cta.howto': 'How a game works',
     'idx.hero.cta.rules': 'Rules',
     'idx.hero.cta.cards': 'View all cards',
 
     'idx.ablauf.eyebrow': 'In 30 seconds',
-    'idx.ablauf.title': 'How a round works',
+    'idx.ablauf.title': 'How a game works',
     'idx.ablauf.lede': 'The basic idea is explained in half a minute. The finer points are in the rules.',
     'idx.step1.h': 'Get rid of your cards',
     'idx.step1.p': 'Everyone starts with 3 face-down, 3 face-up and 3 hand cards. Whoever plays everything first wins.',
@@ -127,7 +127,7 @@
     'idx.step3.h': 'Anything can turn around',
     'idx.step3.p': 'Force a colour, lock out magic, skip a player, RESET: the special cards can flip any situation.',
     'idx.step4.h': 'Cannot play? Pick up',
-    'idx.step4.p': 'If you cannot play anything, you pick up the whole discard pile. Whoever is left holding cards loses the round.',
+    'idx.step4.p': 'If you cannot play anything, you pick up the whole discard pile. Whoever is left holding cards loses the game.',
     'idx.ablauf.linkAll': 'Read the full rules',
 
     'idx.physisch.eyebrow': 'Physical &amp; digital',
@@ -171,10 +171,10 @@
 
     /* ================= Abschnitt "Spielregeln" ================= */
     'rgl.pageTitle': 'Rules',
-    'rgl.pageLede': 'Everything you need for a round with the physical card game – from setup to the very last card.',
+    'rgl.pageLede': 'Everything you need for a game with the physical card game – from setup to the very last card.',
 
     'rgl.quick.title': 'Quick summary',
-    'rgl.quick.1': '<strong>Goal:</strong> Be the first to get rid of all your cards. Whoever is left holding cards last loses the round.',
+    'rgl.quick.1': '<strong>Goal:</strong> Be the first to get rid of all your cards. Whoever is left holding cards last loses the game.',
     'rgl.quick.2': '<strong>Setup:</strong> Everyone has 3 face-down, 3 face-up and 3 hand cards. The rest is the draw pile.',
     'rgl.quick.3': '<strong>Your turn:</strong> Play a card (or several matching ones) onto the discard pile – <strong>equal to or higher</strong> than the top card, or a <strong>magic card</strong>.',
     'rgl.quick.4': '<strong>Then:</strong> Refill your hand back up to 3 cards. Play passes clockwise to the next player.',
@@ -191,7 +191,7 @@
     'rgl.a.title': 'The Goal of the Game',
     'rgl.a.lede': 'Lucky Shutdown is a discard game for <strong>2 to 5 players</strong>. Whoever runs out of cards first is among the winners.',
     'rgl.a.p1': 'In turn, you play cards onto a shared <span class="term">discard pile</span>. Each card must be <strong>at least as high</strong> as the last one played – or a <span class="term">magic card</span>, which briefly changes the rules. Anyone who cannot play must pick up the whole discard pile and carries those cards forward.',
-    'rgl.a.p2': 'Each player gets rid of their cards in three waves: first the <strong>hand cards</strong>, then the <strong>three face-up table cards</strong>, and finally the <strong>three face-down table cards</strong>. As soon as someone has played everything, they are done. The others keep playing. <strong>The last player left holding cards loses the round</strong> and sets up the next one. There is no draw.',
+    'rgl.a.p2': 'Each player gets rid of their cards in three waves: first the <strong>hand cards</strong>, then the <strong>three face-up table cards</strong>, and finally the <strong>three face-down table cards</strong>. As soon as someone has played everything, they are done. The others keep playing. <strong>The last player left holding cards loses the game</strong> and sets up the next one. There is no draw.',
 
     'rgl.b.title': 'Setting Up',
     'rgl.b.step1': '<strong>Shuffle.</strong> Shuffle all 48 cards thoroughly.',
@@ -199,11 +199,11 @@
     'rgl.b.step3': '<strong>Deal the remaining hand cards.</strong> Then give each player <strong>6 more cards</strong>. You may look at your own.',
     'rgl.b.step4': '<strong>Choose the face-up table cards.</strong> Each player picks <strong>3</strong> of these 6 cards and places them <strong>face up on top of the 3 face-down cards</strong>. The remaining 3 cards stay as your <strong>starting hand</strong>.',
     'rgl.b.step5': '<strong>Form the draw pile.</strong> All undealt cards form the face-down <span class="term">draw pile</span>. Next to it there is room for the <span class="term">discard pile</span> – which starts empty.',
-    'rgl.b.step6': '<strong>Determine the starting player.</strong> In the first round, whoever holds the <strong>lowest regular number card</strong> starts (magic cards do not count; in case of a tie, you decide who starts); you do not have to play that card. From the second round on, the player <strong>to the right of the previous loser</strong> always starts – so the loser plays last.',
+    'rgl.b.step6': '<strong>Determine the starting player.</strong> In the first game, whoever holds the <strong>lowest regular number card</strong> starts (magic cards do not count; in case of a tie, you decide who starts); he does not have to play that card. From the second game on, the player <strong>to the right of the previous loser</strong> always starts – so the loser plays last.',
     'rgl.b.resultChip': 'Per player at the start: 3 face-down · 3 face-up · 3 in hand',
 
     'rgl.c.title': 'Taking a Turn',
-    'rgl.c.lede': 'Play goes in turn, <strong>clockwise</strong>. When it is your turn, you do <strong>exactly one</strong> of the following.',
+    'rgl.c.lede': 'Play goes in turn, <strong>clockwise</strong>. When it is your turn, you go through the steps in order – <strong>play or pick up</strong> (step 2 or 3), then refill.',
     'rgl.c.step1': '<strong>Check what is on top.</strong> The top card of the discard pile determines what you are allowed to play. If the pile is empty, you may play any card.',
     'rgl.c.step2': '<strong>Play one card, or several matching cards.</strong> Colour does not matter – what counts is the same value for number cards, or the same effect for magic cards. The three UNDER cards also count as “matching” and can be played together.',
     'rgl.c.step3': '<strong>Or pick up the discard pile.</strong> If you cannot (or do not want to) play, you take <strong>all</strong> the cards from the discard pile into your hand. The next player then opens a new discard pile. You cannot pick up an <strong>empty</strong> pile – in that case you must play.',
@@ -227,7 +227,7 @@
     'rgl.c.matrix.v7': 'Play a number <strong>lower than 16</strong> – or a magic card.',
 
     'rgl.e.title': 'Special Cases &amp; Important Rules',
-    'rgl.e.lede': 'Situations that come up during a round but do not belong in the normal flow. Expand when you need them.',
+    'rgl.e.lede': 'Situations that come up during a game but do not belong in the normal flow. Expand when you need them.',
 
     'rgl.e.d1.summary': 'Four-of-a-kind &amp; Triple – the pile disappears',
     'rgl.e.d1.p1': 'If <strong>four identical number cards</strong> (colour does not matter) end up directly on top of each other on the discard pile (a <span class="term">four-of-a-kind</span>), the entire discard pile is removed – this includes four 19s (nobody skips).',
@@ -274,11 +274,11 @@
     'rgl.e.d7.sub2': 'Early Reveal',
     'rgl.e.d7.p3': 'If you have no hand cards left but still have face-up cards in front of you and cannot play any of them, you may <strong>once per game</strong> reveal and play a face-down card early – but only one that is already exposed (the face-up card on top of it has been played; that is 1–2 cards). If it fits → play continues. If it does not → into your hand, and you pick up the discard pile.',
 
-    'rgl.f.title': 'End of the Round &amp; Winners',
-    'rgl.f.lede': 'A round ends as soon as only one player still has cards.',
-    'rgl.f.step1': '<strong>Finishing.</strong> Whoever plays their very last card – from hand, face-up or face-down table cards – is done and leaves the current round.',
-    'rgl.f.step2': '<strong>The loser.</strong> As soon as only <strong>one</strong> player still has cards, that player loses the round.',
-    'rgl.f.step3': '<strong>Next round.</strong> The loser shuffles and deals the next round. The player <strong>to their right</strong> starts.',
+    'rgl.f.title': 'End of the Game &amp; Winners',
+    'rgl.f.lede': 'A game ends as soon as only one player still has cards.',
+    'rgl.f.step1': '<strong>Finishing.</strong> Whoever plays their very last card – from hand, face-up or face-down table cards – is done and leaves the current game.',
+    'rgl.f.step2': '<strong>The loser.</strong> As soon as only <strong>one</strong> player still has cards, that player loses the game.',
+    'rgl.f.step3': '<strong>Next game.</strong> The loser shuffles and deals the next game. The player <strong>to their right</strong> starts.',
     'rgl.f.final': 'There is no draw.'
   };
 
