@@ -196,10 +196,10 @@
     'rgl.b.title': 'Setting Up',
     'rgl.b.step1': '<strong>Shuffle.</strong> Shuffle all 48 cards thoroughly.',
     'rgl.b.step2': '<strong>Deal the face-down table cards.</strong> Give each player <strong>3 cards face down</strong>. They are placed in front of the player and <strong>not looked at</strong>.',
-    'rgl.b.step3': '<strong>Deal the remaining hand cards.</strong> Then give each player <strong>6 more cards</strong>. Everyone may look at these.',
+    'rgl.b.step3': '<strong>Deal the remaining hand cards.</strong> Then give each player <strong>6 more cards</strong>. You may look at your own.',
     'rgl.b.step4': '<strong>Choose the face-up table cards.</strong> Each player picks <strong>3</strong> of these 6 cards and places them <strong>face up on top of the 3 face-down cards</strong>. The remaining 3 cards stay as your <strong>starting hand</strong>.',
     'rgl.b.step5': '<strong>Form the draw pile.</strong> All undealt cards form the face-down <span class="term">draw pile</span>. Next to it there is room for the <span class="term">discard pile</span> – which starts empty.',
-    'rgl.b.step6': '<strong>Determine the starting player.</strong> In the first round, whoever holds the <strong>lowest regular number card</strong> starts (magic cards do not count; in case of a tie, you decide who starts). From the second round on, the player <strong>to the right of the previous loser</strong> always starts.',
+    'rgl.b.step6': '<strong>Determine the starting player.</strong> In the first round, whoever holds the <strong>lowest regular number card</strong> starts (magic cards do not count; in case of a tie, you decide who starts); you do not have to play that card. From the second round on, the player <strong>to the right of the previous loser</strong> always starts – so the loser plays last.',
     'rgl.b.resultChip': 'Per player at the start: 3 face-down · 3 face-up · 3 in hand',
 
     'rgl.c.title': 'Taking a Turn',
@@ -210,7 +210,7 @@
     'rgl.c.step4': '<strong>Refill your hand.</strong> If you have fewer than 3 cards in hand after your turn, draw from the draw pile until you have 3 again – as long as the draw pile still has cards.',
     'rgl.c.step5': '<strong>The next player goes</strong> – clockwise.',
 
-    'rgl.c.matrix.k1': 'On top … nothing',
+    'rgl.c.matrix.k1': 'On top … nothing (also after a RESET)',
     'rgl.c.matrix.anyCard': 'Play <strong>any</strong> card.',
     'rgl.c.matrix.k2': '… a number (e.g. 16)',
     'rgl.c.matrix.v2': 'Play a number <strong>16 or higher</strong> – or a magic card.',
@@ -220,6 +220,8 @@
     'rgl.c.matrix.v4': 'Play a card of the <strong>shown colour</strong> (value does not matter, even lower) – or a magic card of that colour.',
     'rgl.c.matrix.k5': '… a 19 (skip)',
     'rgl.c.matrix.v5': 'You are <strong>skipped</strong> – unless you play a 19 yourself.',
+    'rgl.c.matrix.kPass': '… a PASS',
+    'rgl.c.matrix.vPass': 'The <strong>card underneath</strong> counts.',
     'rgl.c.matrix.k6': '… a WILD',
     'rgl.c.matrix.k7': '… an UNDER (e.g. 16)',
     'rgl.c.matrix.v7': 'Play a number <strong>lower than 16</strong> – or a magic card.',
@@ -235,8 +237,8 @@
     'rgl.e.d1.p4': 'A four-of-a-kind/triple can happen in <strong>one turn</strong> (you play all the cards yourself) or across several turns – including as a quick reaction (see below).',
 
     'rgl.e.d2.summary': 'Quick Reaction – Grab the four-of-a-kind or triple!',
-    'rgl.e.d2.p1': 'If <strong>three matching cards</strong> are already on the pile and you are only missing the fourth for a four-of-a-kind, <strong>any player</strong> may immediately add the matching card – <strong>even if it is not their turn</strong>. The same applies if one card is on the pile and a player holds the three matching cards, or if two cards are on the pile and a player holds the two missing ones – they then play all of them at once. You may react with <strong>hand cards</strong>; face-up table cards only if you have no hand cards left; face-down cards never.',
-    'rgl.e.d2.p2': 'The four-of-a-kind (for number cards) or triple (for magic cards) is then complete, the entire pile is removed, and you immediately get the next turn (without drawing first – only with an empty hand do you draw up to 3 cards).',
+    'rgl.e.d2.p1': 'If <strong>three matching cards</strong> are already on the pile and you are only missing the fourth for a four-of-a-kind, <strong>any player</strong> may immediately add the matching card – <strong>even if it is not their turn</strong>. The same applies if only one or two cards are on the pile and a player holds <strong>all</strong> the missing matching cards – they then play them all at once (same for a triple). You may react with <strong>hand cards</strong>; face-up table cards only if you have no hand cards left; face-down cards never.',
+    'rgl.e.d2.p2': 'That completes the four-of-a-kind or triple: the entire pile is removed, you immediately get the next turn (drawing only with an empty hand), and play then continues to your left.',
     'rgl.e.d2.p3': 'Be quick and pay attention: once the regular next player has played a different card, the chance is gone.',
 
     'rgl.e.d3.summary': 'Colour Lock',

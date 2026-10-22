@@ -190,10 +190,10 @@
     <ol class="steps">
       <li data-i18n="rgl.b.step1"><strong>Mischen.</strong> Mische alle 48 Karten gründlich.</li>
       <li data-i18n="rgl.b.step2"><strong>Verdeckte Tischkarten austeilen.</strong> Gib jedem Spieler <strong>3 Karten verdeckt</strong>. Sie werden vor dem Spieler abgelegt und <strong>nicht angesehen</strong>.</li>
-      <li data-i18n="rgl.b.step3"><strong>Die restlichen Handkarten austeilen.</strong> Gib jedem Spieler danach <strong>6 weitere Karten</strong>. Diese darf jeder ansehen.</li>
+      <li data-i18n="rgl.b.step3"><strong>Die restlichen Handkarten austeilen.</strong> Gib jedem Spieler danach <strong>6 weitere Karten</strong>. Diese darfst du ansehen.</li>
       <li data-i18n="rgl.b.step4"><strong>Offene Tischkarten wählen.</strong> Jeder Spieler wählt aus diesen 6 Karten <strong>3 aus</strong> und legt sie <strong>offen auf die 3 verdeckten Karten</strong>. Die übrigen 3 Karten bleiben als <strong>Starthand</strong> auf der Hand.</li>
       <li data-i18n="rgl.b.step5"><strong>Nachziehstapel bilden.</strong> Alle nicht ausgeteilten Karten bilden verdeckt den <span class="term">Nachziehstapel</span>. Daneben ist Platz für den <span class="term">Ablagestapel</span> – der startet leer.</li>
-      <li data-i18n="rgl.b.step6"><strong>Startspieler bestimmen.</strong> In der ersten Runde beginnt, wer die <strong>niedrigste normale Zahlenkarte</strong> auf der Hand hat (Magic-Karten zählen nicht; bei Gleichstand entscheidet ihr, wer startet). Ab der zweiten Runde beginnt immer der Spieler <strong>rechts neben dem Verlierer</strong> der Vorrunde.</li>
+      <li data-i18n="rgl.b.step6"><strong>Startspieler bestimmen.</strong> In der ersten Runde beginnt, wer die <strong>niedrigste normale Zahlenkarte</strong> auf der Hand hat (Magic-Karten zählen nicht; bei Gleichstand entscheidet ihr, wer startet); du musst diese Karte nicht legen. Ab der zweiten Runde beginnt immer der Spieler <strong>rechts neben dem Verlierer</strong> der Vorrunde – der Verlierer spielt also zuletzt.</li>
     </ol>
     <div class="result-chip" data-i18n="rgl.b.resultChip">Pro Spieler am Start: 3&nbsp;verdeckt · 3&nbsp;offen · 3&nbsp;auf der Hand</div>
   </section>
@@ -211,11 +211,12 @@
     </ol>
 
     <div class="play-matrix">
-      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k1">Oben liegt … nichts</span><span class="v" data-i18n="rgl.c.matrix.anyCard">Lege eine <strong>beliebige</strong> Karte.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.k1">Oben liegt … nichts (auch nach RESET)</span><span class="v" data-i18n="rgl.c.matrix.anyCard">Lege eine <strong>beliebige</strong> Karte.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k2">… eine Zahl (z.&nbsp;B. 16)</span><span class="v" data-i18n="rgl.c.matrix.v2">Lege eine Zahl <strong>16 oder höher</strong> – oder eine Magic-Karte.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k3">… eine 15 (Magic-Sperre)</span><span class="v" data-i18n="rgl.c.matrix.v3">Nur eine Zahl <strong>15 oder höher</strong>. <strong>Keine</strong> Magic-Karte.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k4">… eine 17 (Farbzwang)</span><span class="v" data-i18n="rgl.c.matrix.v4">Lege eine Karte der <strong>gezeigten Farbe</strong> (Wert egal, auch niedriger) – oder eine Magic-Karte dieser Farbe.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k5">… eine 19 (Aussetzen)</span><span class="v" data-i18n="rgl.c.matrix.v5">Du bist <strong>übersprungen</strong> – außer du legst selbst eine 19.</span></div>
+      <div class="row"><span class="k" data-i18n="rgl.c.matrix.kPass">… ein PASS</span><span class="v" data-i18n="rgl.c.matrix.vPass">Es zählt die <strong>Karte darunter</strong>.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k6">… ein WILD</span><span class="v" data-i18n="rgl.c.matrix.anyCard">Lege eine <strong>beliebige</strong> Karte.</span></div>
       <div class="row"><span class="k" data-i18n="rgl.c.matrix.k7">… ein UNDER (z.&nbsp;B. 16)</span><span class="v" data-i18n="rgl.c.matrix.v7">Lege eine Zahl <strong>kleiner als 16</strong> – oder eine Magic-Karte.</span></div>
     </div>
@@ -240,8 +241,8 @@
     <details class="disclosure">
       <summary data-i18n="rgl.e.d2.summary">Schnellreaktion – Schnapp dir den Vierling oder Drilling!</summary>
       <div class="disclosure-body">
-        <p data-i18n="rgl.e.d2.p1">Liegen bereits <strong>drei gleiche Karten</strong> auf dem Stapel und dir fehlt nur die vierte zum Vierling, darf <strong>jeder Spieler</strong> die passende Karte sofort dazulegen – <strong>auch wenn er nicht an der Reihe ist</strong>. Das Gleiche gilt, wenn eine Karte liegt und ein Spieler die drei passenden Karten besitzt, oder wenn zwei Karten liegen und ein Spieler die beiden fehlenden Karten hat – er legt dann alle auf einmal. Reagieren darfst du mit <strong>Handkarten</strong>; offene Tischkarten nur, wenn du keine Handkarten mehr hast; verdeckte nie.</p>
-        <p data-i18n="rgl.e.d2.p2">Der Vierling bei Zahlenkarten bzw. Drilling bei Magic-Karten ist damit vollständig, der gesamte Stapel wird entfernt und du erhältst sofort den nächsten Zug (ohne vorher nachzuziehen – nur bei leerer Hand ziehst du auf 3&nbsp;Karten nach).</p>
+        <p data-i18n="rgl.e.d2.p1">Liegen bereits <strong>drei gleiche Karten</strong> auf dem Stapel und dir fehlt nur die vierte zum Vierling, darf <strong>jeder Spieler</strong> die passende Karte sofort dazulegen – <strong>auch wenn er nicht an der Reihe ist</strong>. Das Gleiche gilt, wenn nur eine oder zwei Karten liegen und ein Spieler <strong>alle</strong> passenden fehlenden Karten besitzt – er legt sie dann auf einmal (beim Drilling genauso). Reagieren darfst du mit <strong>Handkarten</strong>; offene Tischkarten nur, wenn du keine Handkarten mehr hast; verdeckte nie.</p>
+        <p data-i18n="rgl.e.d2.p2">Damit ist der Vierling bzw. Drilling vollständig: Der gesamte Stapel wird entfernt, du erhältst sofort den nächsten Zug (nachziehen nur bei leerer Hand), und links von dir geht es danach weiter.</p>
         <p data-i18n="rgl.e.d2.p3">Sei schnell und aufmerksam: Sobald der regulär nächste Spieler eine andere Karte gelegt hat, ist die Chance vorbei.</p>
       </div>
     </details>
