@@ -744,25 +744,6 @@ h2.section-title {
 .site-footer li { margin: 7px 0; }
 .site-footer a { color: rgba(246, 241, 228, 0.7); text-decoration: none; }
 .site-footer a:hover { color: var(--cream); }
-.footer-newsletter { max-width: 300px; }
-.footer-newsletter p { margin: 0 0 12px; }
-.footer-newsletter .row { display: flex; gap: 8px; }
-.footer-newsletter input {
-  flex: 1; min-width: 0;
-  background: rgba(246,241,228,0.08);
-  border: 1px solid rgba(246,241,228,0.18);
-  border-radius: 980px;
-  padding: 9px 14px;
-  color: var(--cream);
-  font-family: inherit; font-size: 13px;
-}
-.footer-newsletter input::placeholder { color: rgba(246,241,228,0.4); }
-.footer-newsletter button {
-  border: none; border-radius: 980px;
-  background: var(--gold-bright); color: var(--ink);
-  font-weight: 650; font-size: 13px; padding: 9px 16px;
-  cursor: pointer; white-space: nowrap;
-}
 .footer-bottom {
   border-top: 1px solid rgba(246,241,228,0.12);
   padding-top: 24px;

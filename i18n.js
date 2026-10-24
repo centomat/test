@@ -30,12 +30,6 @@
 
     /* ---- Footer (alle Seiten) ---- */
     'footer.buyLink': 'Buy',
-    'footer.newsletterTitle': 'Newsletter',
-    'footer.newsletterText': 'Find out when the physical game and the online version are available.',
-    'footer.emailPlaceholder': 'Your email',
-    'footer.emailAriaLabel': 'Email address',
-    'footer.signupButton': 'Sign up',
-    'footer.placeholderNote': 'Placeholder – not active yet',
     'footer.imprint': 'Imprint',
 
     /* ---- Impressum (impressum.html) ---- */
@@ -161,8 +155,8 @@
 
 
     'idx.buy.title': 'Buy Lucky Shutdown',
-    'idx.buy.p': 'The physical edition is coming soon. Sign up for the newsletter to be among the first to know when it launches.',
-    'idx.buy.cta': 'Get notified',
+    'idx.buy.p': 'The physical edition is coming soon. Questions? Send us an email.',
+    'idx.buy.cta': 'Ask by email',
     'idx.buy.note': 'Shop coming soon – this area is reserved for the future checkout',
 
 
