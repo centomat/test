@@ -32,6 +32,30 @@
     'footer.buyLink': 'Buy',
     'footer.imprint': 'Imprint',
 
+
+    /* ---- Datenschutz (datenschutz.html) ---- */
+    'dsg.title': 'Privacy policy',
+    'dsg.lede': 'Here you can read which personal data is processed when you visit this website and how we handle it.',
+    'dsg.h1': '1. Controller',
+    'dsg.controller': 'The controller for data processing on this website is Vincent Kamin, Vantoro Games, Rochusweg 41, 33102 Paderborn, Germany, email: <a href="mailto:info@lucky-shutdown.com">info@lucky-shutdown.com</a>.',
+    'dsg.h2': '2. In brief',
+    'dsg.brief': 'This website is deliberately simple: there are <strong>no cookies</strong>, <strong>no user accounts</strong>, <strong>no forms</strong>, <strong>no advertising</strong> and <strong>no analytics or tracking services</strong>. No fonts, scripts or images are loaded from third-party servers.',
+    'dsg.h3': '3. Hosting (GitHub Pages)',
+    'dsg.hosting1': 'The website is delivered via <strong>GitHub Pages</strong> (provider: GitHub Inc., USA). When you visit the page, the hosting provider processes technically necessary connection data, in particular your <strong>IP address</strong>, the date and time of the request, the requested page, the amount of data transferred, and browser and operating-system information, in order to deliver the page and keep it secure. We ourselves have no access to this data and do not evaluate it.',
+    'dsg.hosting2': 'The legal basis is our legitimate interest in providing the website securely and reliably (Art. 6(1)(f) GDPR). As GitHub is based in the USA, data may be transferred to the USA; the provider relies on safeguards such as the EU-US Data Privacy Framework or standard contractual clauses. More in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub’s privacy statement</a>.',
+    'dsg.h4': '4. Domain name service (Cloudflare)',
+    'dsg.dns': 'The domain <em>lucky-shutdown.com</em> is managed through the DNS service of <strong>Cloudflare</strong> (Cloudflare, Inc., USA). Cloudflare answers the request which server belongs to the domain. The page content itself does not pass through Cloudflare. The legal basis is Art. 6(1)(f) GDPR (reliable operation of the domain). More information: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare’s privacy policy</a>.',
+    'dsg.h5': '5. Contact by email',
+    'dsg.mail': 'If you email us, we process your sender address, the content of your message and the time of the message in order to handle your request (Art. 6(1)(b) or (f) GDPR). Emails are stored with <strong>Zoho Mail</strong> in data centres in the EU (<a href="https://www.zoho.com/privacy.html" target="_blank" rel="noopener">Zoho’s privacy policy</a>). We delete your message once your request has been dealt with and no statutory retention obligations apply.',
+    'dsg.h6': '6. Language setting in your browser',
+    'dsg.lang': 'When you switch the language (German/English) at the top, the website saves your choice in your browser’s local storage so that it is kept on your next visit. It is not a cookie, the value is not sent to us and it contains no personal data. You can delete it at any time in your browser settings.',
+    'dsg.h7': '7. Your rights',
+    'dsg.rights': 'Under the GDPR you have the right of <strong>access</strong> (Art. 15), <strong>rectification</strong> (Art. 16), <strong>erasure</strong> (Art. 17), <strong>restriction of processing</strong> (Art. 18), <strong>data portability</strong> (Art. 20) and <strong>objection</strong> to processing based on legitimate interests (Art. 21). Simply contact us by email.',
+    'dsg.h8': '8. Right to lodge a complaint',
+    'dsg.complaint': 'You can lodge a complaint with a data protection supervisory authority. The authority responsible for us is the State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia (<a href="https://www.ldi.nrw.de" target="_blank" rel="noopener">www.ldi.nrw.de</a>).',
+    'dsg.h9': '9. Updates',
+    'dsg.updated': 'As of: October 2026. If we add new features to the website (e.g. a shop or the online version), we will update this policy.',
+
     /* ---- Impressum (impressum.html) ---- */
     'imp.title': 'Imprint',
     'imp.lede': 'Information pursuant to § 5 German Digital Services Act (DDG)',
@@ -41,7 +65,7 @@
     'imp.contact': 'Contact',
     'imp.email': 'Email:',
     'imp.back': 'Back to the home page',
-    'footer.privacy': 'Privacy policy (placeholder)',
+    'footer.privacy': 'Privacy policy',
 
     /* ---- Alt-Texte fuer Kartenbilder (mehrfach verwendet) ---- */
     'alt.zahl21': 'Number card 21',
@@ -288,7 +312,8 @@
 
   var PAGE_TITLES_EN = {
     index: 'Lucky Shutdown – Card Game',
-    impressum: 'Imprint – Lucky Shutdown'
+    impressum: 'Imprint – Lucky Shutdown',
+    datenschutz: 'Privacy policy – Lucky Shutdown'
   };
 
   var ATTRS = ['alt', 'aria-label', 'placeholder'];
