@@ -107,7 +107,7 @@
     'cardfn.15.special': 'The lock is absolute. Magic cards are only allowed again once a different card is on top.',
 
     'cardfn.17.title': 'The 17 – Colour Lock',
-    'cardfn.17.fn': 'Sets a <strong>required colour</strong> – orange or blue, depending on the colour of the 17.',
+    'cardfn.17.fn': 'Sets a <strong>required colour</strong> for as long as the 17 is on top – orange or blue, depending on the colour of the 17.',
     'cardfn.17.after': 'The next player may <strong>only play cards of the required colour</strong> (or dual-colour cards). The value does not matter here – <strong>lower</strong> cards are allowed too. If someone plays another 17, its colour applies to the next player from then on.',
     'cardfn.17.special': 'The colour lock applies <strong>without exception to every card</strong> – including every magic card. Only cards with the required colour, or dual-colour cards, may be played. If you play several matching cards together, <strong>only one of them</strong> needs the required colour – the rest may be a different colour, as long as they share the same value. Example: on an orange 17 you may play an orange 19 together with two blue 19s.',
 
