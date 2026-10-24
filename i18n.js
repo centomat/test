@@ -45,8 +45,8 @@
     'dsg.hosting2': 'The legal basis is our legitimate interest in providing the website securely and reliably (Art. 6(1)(f) GDPR). As GitHub is based in the USA, data may be transferred to the USA; the provider relies on safeguards such as the EU-US Data Privacy Framework or standard contractual clauses. More in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub’s privacy statement</a>.',
     'dsg.h4': '4. Domain name service (Cloudflare)',
     'dsg.dns': 'The domain <em>lucky-shutdown.com</em> is managed through the DNS service of <strong>Cloudflare</strong> (Cloudflare, Inc., USA). Cloudflare answers the request which server belongs to the domain. The page content itself does not pass through Cloudflare. The legal basis is Art. 6(1)(f) GDPR (reliable operation of the domain). More information: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare’s privacy policy</a>.',
-    'dsg.h5': '5. Contact by email',
-    'dsg.mail': 'If you email us, we process your sender address, the content of your message and the time of the message in order to handle your request (Art. 6(1)(b) or (f) GDPR). Emails are stored with <strong>Zoho Mail</strong> in data centres in the EU (<a href="https://www.zoho.com/privacy.html" target="_blank" rel="noopener">Zoho’s privacy policy</a>). We delete your message once your request has been dealt with and no statutory retention obligations apply.',
+    'dsg.h5': '5. Contact by email or phone',
+    'dsg.mail': 'If you email us or call us, we process your phone number (for calls) or your sender address, the content of your message and the time of the message in order to handle your request (Art. 6(1)(b) or (f) GDPR). Emails are stored with <strong>Zoho Mail</strong> in data centres in the EU (<a href="https://www.zoho.com/privacy.html" target="_blank" rel="noopener">Zoho’s privacy policy</a>). We delete your message once your request has been dealt with and no statutory retention obligations apply.',
     'dsg.h6': '6. Language setting in your browser',
     'dsg.lang': 'When you switch the language (German/English) at the top, the website saves your choice in your browser’s local storage so that it is kept on your next visit. It is not a cookie, the value is not sent to us and it contains no personal data. You can delete it at any time in your browser settings.',
     'dsg.h7': '7. Your rights',
@@ -64,6 +64,7 @@
     'imp.country': 'Germany',
     'imp.contact': 'Contact',
     'imp.email': 'Email:',
+    'imp.phone': 'Phone:',
     'imp.back': 'Back to the home page',
     'footer.privacy': 'Privacy policy',
 
