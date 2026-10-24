@@ -36,7 +36,17 @@
     'footer.emailAriaLabel': 'Email address',
     'footer.signupButton': 'Sign up',
     'footer.placeholderNote': 'Placeholder – not active yet',
-    'footer.imprint': 'Imprint (placeholder)',
+    'footer.imprint': 'Imprint',
+
+    /* ---- Impressum (impressum.html) ---- */
+    'imp.title': 'Imprint',
+    'imp.lede': 'Information pursuant to § 5 German Digital Services Act (DDG)',
+    'imp.provider': 'Provider',
+    'imp.owner': 'Owner: Vincent Kamin',
+    'imp.country': 'Germany',
+    'imp.contact': 'Contact',
+    'imp.email': 'Email:',
+    'imp.back': 'Back to the home page',
     'footer.privacy': 'Privacy policy (placeholder)',
 
     /* ---- Alt-Texte fuer Kartenbilder (mehrfach verwendet) ---- */
@@ -283,7 +293,8 @@
   };
 
   var PAGE_TITLES_EN = {
-    index: 'Lucky Shutdown – Card Game'
+    index: 'Lucky Shutdown – Card Game',
+    impressum: 'Imprint – Lucky Shutdown'
   };
 
   var ATTRS = ['alt', 'aria-label', 'placeholder'];
