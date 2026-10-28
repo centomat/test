@@ -345,30 +345,72 @@ h2.section-title {
 .hero .tagline .draft-tag { display: block; margin-top: 12px; }
 
 .box3d-wrap { margin: 44px auto 4px; display: flex; justify-content: center; }
+/* Kartenspiel im Klarsichtetui: 1 mm = 3.9 px. Karten 63,5 x 88,9 mm (248 x 347 px), Stapel ca. 17 mm (66 px),
+   Etui 67 x 93 x 21 mm (261 x 363 x 82 px). Alles in 3D, ziehbar wie zuvor. */
 .box3d-stage {
-  width: 280px; height: 364px;
-  perspective: 1400px;
+  position: relative;
+  width: 261px; height: 363px;
+  perspective: 1500px;
   touch-action: none; user-select: none;
-  filter: drop-shadow(0 40px 60px rgba(20, 22, 26, 0.22));
+  --gx: 50%;
+  filter: drop-shadow(0 22px 30px rgba(20, 22, 26, 0.18));
+}
+.case-shadow {
+  position: absolute; left: 50%; bottom: -46px; width: 230px; height: 34px; margin-left: -115px;
+  background: radial-gradient(ellipse at center, rgba(20,22,26,.30) 0%, rgba(20,22,26,0) 70%);
+  filter: blur(6px); pointer-events: none;
 }
 .box3d-cube {
   position: relative; width: 100%; height: 100%;
   transform-style: preserve-3d; cursor: grab; will-change: transform;
 }
 .box3d-cube.dragging { cursor: grabbing; }
-.box3d-face {
-  position: absolute; top: 50%; left: 50%;
-  overflow: hidden; border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(20, 22, 26, 0.06);
-  backface-visibility: hidden;
+.stack, .shell { position: absolute; top: 50%; left: 50%; backface-visibility: hidden; }
+/* --- Kartenstapel --- */
+.stack img { width: 100%; height: 100%; display: block; pointer-events: none; }
+.stack.face-front, .stack.face-back { width: 248px; height: 347px; margin: -173.5px 0 0 -124px; }
+.stack.face-front { transform: translateZ(33px); }
+.stack.face-back  { transform: rotateY(180deg) translateZ(33px); }
+.stack.edge-right, .stack.edge-left { width: 66px; height: 335px; margin: -167.5px 0 0 -33px;
+  background: repeating-linear-gradient(90deg, #f6f1e4 0 1.5px, #d9d0b8 1.5px 2.1px); box-shadow: inset 0 0 14px rgba(20,22,26,.10); }
+.stack.edge-right { transform: rotateY(90deg) translateZ(124px); }
+.stack.edge-left  { transform: rotateY(-90deg) translateZ(124px); }
+.stack.edge-top, .stack.edge-bottom { width: 236px; height: 66px; margin: -33px 0 0 -118px;
+  background: repeating-linear-gradient(0deg, #f6f1e4 0 1.5px, #d9d0b8 1.5px 2.1px); box-shadow: inset 0 0 14px rgba(20,22,26,.10); }
+.stack.edge-top    { transform: rotateX(90deg) translateZ(173.5px); }
+.stack.edge-bottom { transform: rotateX(-90deg) translateZ(173.5px); }
+/* --- Klarsichtetui: durchsichtiger Kunststoff, Glanzlicht wandert mit der Drehung --- */
+.shell {
+  border-radius: 11px;
+  border: 1.5px solid rgba(255,255,255,.75);
+  background:
+    linear-gradient(112deg, rgba(255,255,255,0) calc(var(--gx) - 16%), rgba(255,255,255,.34) var(--gx), rgba(255,255,255,0) calc(var(--gx) + 16%)),
+    linear-gradient(180deg, rgba(214,228,236,.16), rgba(214,228,236,.06));
+  box-shadow: inset 0 0 0 1px rgba(20,22,26,.10), inset 0 0 18px rgba(255,255,255,.28), 0 0 0 1px rgba(20,22,26,.05);
+  pointer-events: none;
 }
-.box3d-face img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
-.box3d-face.front  { width: 280px; height: 364px; margin: -182px 0 0 -140px; transform: translateZ(28px); }
-.box3d-face.back   { width: 280px; height: 364px; margin: -182px 0 0 -140px; transform: rotateY(180deg) translateZ(28px); }
-.box3d-face.right  { width: 56px;  height: 364px; margin: -182px 0 0 -28px;  transform: rotateY(90deg) translateZ(140px); }
-.box3d-face.left   { width: 56px;  height: 364px; margin: -182px 0 0 -28px;  transform: rotateY(-90deg) translateZ(140px); }
-.box3d-face.top    { width: 280px; height: 56px;  margin: -28px 0 0 -140px; transform: rotateX(90deg) translateZ(182px); }
-.box3d-face.bottom { width: 280px; height: 56px;  margin: -28px 0 0 -140px; transform: rotateX(-90deg) translateZ(182px); }
+.shell-front, .shell-back { width: 261px; height: 363px; margin: -181.5px 0 0 -130.5px; }
+.shell-front { transform: translateZ(41px); }
+.shell-back  { transform: rotateY(180deg) translateZ(41px); }
+.shell-right, .shell-left { width: 82px; height: 363px; margin: -181.5px 0 0 -41px; }
+.shell-right { transform: rotateY(90deg) translateZ(130.5px); }
+.shell-left  { transform: rotateY(-90deg) translateZ(130.5px); }
+.shell-top, .shell-bottom { width: 261px; height: 82px; margin: -41px 0 0 -130.5px; }
+.shell-top    { transform: rotateX(90deg) translateZ(181.5px); }
+.shell-bottom { transform: rotateX(-90deg) translateZ(181.5px); }
+/* Deckel-Fuge (Klappdeckel oben) + Griffmulde, vorn/hinten/seitlich */
+.shell-front::before, .shell-back::before, .shell-right::before, .shell-left::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 13%;
+  border-top: 1.5px solid rgba(20,22,26,.20); box-shadow: 0 1.5px 0 rgba(255,255,255,.65);
+}
+.shell-front::after {
+  content: ''; position: absolute; left: 50%; top: 2.5%; width: 44px; height: 14px; margin-left: -22px;
+  border-radius: 0 0 22px 22px; border: 1.5px solid rgba(20,22,26,.16); border-top: none;
+  background: rgba(255,255,255,.18);
+}
+.shell-top { background:
+  linear-gradient(90deg, rgba(20,22,26,.07) 0 6%, rgba(255,255,255,.10) 6% 94%, rgba(20,22,26,.07) 94%),
+  linear-gradient(180deg, rgba(214,228,236,.20), rgba(214,228,236,.08)); }
 
 .drag-hint {
   text-align: center;

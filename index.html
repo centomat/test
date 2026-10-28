@@ -42,14 +42,23 @@
     </p>
 
     <div class="box3d-wrap">
-      <div class="box3d-stage" id="box3dStage" data-i18n-aria-label="idx.hero.box3dLabel" aria-label="3D-Ansicht der Verpackung, ziehen zum Drehen">
+      <div class="box3d-stage" id="box3dStage" data-i18n-aria-label="idx.hero.box3dLabel" aria-label="3D-Ansicht des Kartenspiels im Klarsichtetui, ziehen zum Drehen">
+        <div class="case-shadow"></div>
         <div class="box3d-cube" id="box3dCube">
-          <div class="box3d-face front"><img src="assets/box/front.svg" data-i18n-alt="alt.boxFront" alt="Verpackung Vorderseite" draggable="false"></div>
-          <div class="box3d-face back"><img src="assets/box/back.svg" data-i18n-alt="alt.boxBack" alt="Verpackung Rückseite" draggable="false"></div>
-          <div class="box3d-face right"><img src="assets/box/right.svg" alt="" draggable="false"></div>
-          <div class="box3d-face left"><img src="assets/box/left.svg" alt="" draggable="false"></div>
-          <div class="box3d-face top"><img src="assets/box/top.svg" alt="" draggable="false"></div>
-          <div class="box3d-face bottom"><img src="assets/box/bottom.svg" alt="" draggable="false"></div>
+          <!-- Kartenstapel: Deckblatt vorn, Rückseite einer Spielkarte hinten, Kartenkanten an den Seiten -->
+          <div class="stack face-front"><img src="assets/case/deckblatt.svg" data-i18n-alt="alt.caseFront" alt="Deckblatt des Kartenspiels" draggable="false"></div>
+          <div class="stack face-back"><img src="assets/case/back.svg" data-i18n-alt="alt.caseBack" alt="Rückseite einer Spielkarte" draggable="false"></div>
+          <div class="stack edge-right"></div>
+          <div class="stack edge-left"></div>
+          <div class="stack edge-top"></div>
+          <div class="stack edge-bottom"></div>
+          <!-- Klarsichtetui (durchsichtiger Kunststoff mit Deckel-Fuge oben) -->
+          <div class="shell shell-front"></div>
+          <div class="shell shell-back"></div>
+          <div class="shell shell-right"></div>
+          <div class="shell shell-left"></div>
+          <div class="shell shell-top"></div>
+          <div class="shell shell-bottom"></div>
         </div>
       </div>
     </div>

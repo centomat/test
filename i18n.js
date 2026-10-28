@@ -77,8 +77,8 @@
     'alt.pss': 'Magic card PASS',
     'alt.wld': 'Magic card WILD',
     'alt.udc': 'Magic card UNDER',
-    'alt.boxFront': 'Packaging front',
-    'alt.boxBack': 'Packaging back',
+    'alt.caseFront': 'Cover card of the card game',
+    'alt.caseBack': 'Back of a playing card',
 
     /* ================= Kartenfunktionen (nur noch im Abschnitt "Alle Karten" - die
        Spielregeln verweisen jetzt dorthin statt sie zu duplizieren)
@@ -140,7 +140,7 @@
 
     /* ================= index.html ================= */
     'idx.hero.tagline': 'The fast-paced discard card game for 2–5 players: play smart, force colours, unleash magic cards at the perfect moment – and be the first to get rid of all your cards.',
-    'idx.hero.box3dLabel': '3D view of the packaging, drag to rotate',
+    'idx.hero.box3dLabel': '3D view of the card game in its clear plastic case, drag to rotate',
     'idx.hero.dragHint': 'Drag to rotate',
     'idx.hero.cta.howto': 'How a game works',
     'idx.hero.cta.rules': 'Rules',

@@ -3,7 +3,7 @@
    Zwei Bausteine, alle bewusst ohne Framework/Build:
    1. Nav-Menü (.nav-menu-btn)      - Hamburger-Knopf klappt die Seitenlinks
       unter der Kopfzeile auf/zu (Desktop wie Handy gleich).
-   2. 3D-Verpackung (#box3dStage)   - ziehen zum Drehen
+   2. 3D-Kartenspiel im Klarsichtetui (#box3dStage) - ziehen zum Drehen
    Beide prüfen selbst, ob ihr Element auf der Seite existiert. */
 
 (function navMenu() {
@@ -38,7 +38,11 @@
   var rotX = -12, rotY = -28;
   var dragging = false, lastX = 0, lastY = 0, lastInteraction = 0;
 
-  function apply() { cube.style.transform = 'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)'; }
+  function apply() {
+    cube.style.transform = 'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)';
+    // Glanzlicht auf dem Klarsichtetui wandert mit der Drehung (nur Optik)
+    stage.style.setProperty('--gx', (50 + 38 * Math.sin(rotY * Math.PI / 180)).toFixed(1) + '%');
+  }
   function start(x, y) { dragging = true; lastX = x; lastY = y; lastInteraction = performance.now(); cube.classList.add('dragging'); }
   function move(x, y) {
     if (!dragging) return;
